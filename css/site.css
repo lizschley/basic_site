@@ -1,0 +1,47 @@
+/* Define standard variables and values for website */
+/* Use the variables */
+
+body {
+    background-color: #FEF9E7;
+    color: #006600;
+}
+
+body #header {
+    padding: 20px;
+    color: #FEF9E7;
+    background-color: #fef9e7;
+    background-image: linear-gradient(to bottom,#006600 0%,#fef9e7 100%);
+  }
+
+.header_words {
+  display:inline;
+}  
+
+#header h1 {
+    margin-left: 150px;
+    font-weight: 400;
+}
+
+#header h3 {
+    margin-left: 150px;
+    font-weight: 300;
+    font-style: italic;
+    color: #006600;
+}
+
+.figure-caption {
+  color: #006600;
+}
+
+ul.dropdown-menu {
+  background-color: #FEF9E7;
+}
+
+a.dropdown-item {
+  color: #006600;
+  --bs-dropdown-color: rgb(0, 102, 0);;
+  --bs-dropdown-bg: #FEF9E7;;
+  --bs-dropdown-border-color: #006600;
+  --bs-dropdown-link-hover-color: hsl(120, 100%, 40%);
+  --bs-dropdown-link-active-color: hsl(120, 100%, 40%);;\
+}
