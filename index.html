@@ -5,7 +5,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="shortcut icon" href="images/logo.png" type="image/png">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-      <link href="css/site.css" id="theme_css" media="screen" rel="stylesheet"/>
+      <link href="css/navbar.css" id="navbar_css" media="screen" rel="stylesheet"/>
+      <link href="css/site.css" id="site_css" media="screen" rel="stylesheet"/>
       <title>Inquiries and Observations | Inquiries and Observations </title>
    </head>
    <body>
@@ -19,15 +20,15 @@
         </div>
       </div>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-sm " aria-label="navbar">
-        <div class="container-fluid">
+      <nav class="navbar-liz navbar-expand-sm " aria-label="navbar">
+        <div class="container-fluid ">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".collapse" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
           </button> 
           <div class="collapse navbar-collapse" id="navbarsExample03">
-            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+            <ul class="navbar-liz list-unstyled" me-auto mb-2 mb-sm-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active navlink-liz" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
@@ -36,11 +37,11 @@
                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                <a id="nav_dropdown" class="dropdown-toggle liz-colors" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li class="list-item"><a class="dropdown-item " href="#">Action</a></li>
+                  <li class="list-item"><a class="dropdown-item" href="#">Another action</a></li>
+                  <li class="list-item"><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
             </ul>

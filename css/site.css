@@ -33,7 +33,15 @@ body #header {
   color: #006600;
 }
 
-.nav-link a {
-    display: inline;
+ul.dropdown-menu {
+  background-color: #FEF9E7;
 }
 
+a.dropdown-item {
+  color: #006600;
+  --bs-dropdown-color: rgb(0, 102, 0);;
+  --bs-dropdown-bg: #FEF9E7;;
+  --bs-dropdown-border-color: #006600;
+  --bs-dropdown-link-hover-color: hsl(120, 100%, 40%);
+  --bs-dropdown-link-active-color: hsl(120, 100%, 40%);;\
+}
