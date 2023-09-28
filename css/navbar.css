@@ -5,12 +5,13 @@
 }
 
 a#nav_dropdown.liz-colors.dropdown-toggle {
-  color: rgb(0, 102, 0);
-  text-decoration: none;
+    background-color: #006600;
+    color: #FEF9E7;
+    text-decoration: none;
 }
 
 li.nav-item {
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 a.navlink {
@@ -21,7 +22,9 @@ a.dropdown-toggle {
     text-decoration: none;
 }
 
-.navbar-liz{
+.navbar{
+    background-color:hsl(120, 100%, 20%);
+    color: #FEF9E7;
     --bs-navbar-padding-x: 0;
     --bs-navbar-padding-y: 0.5rem;
     --bs-navbar-brand-padding-y: 0.3125rem;

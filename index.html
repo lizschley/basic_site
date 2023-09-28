@@ -10,8 +10,39 @@
       <title>Inquiries and Observations | Inquiries and Observations </title>
    </head>
    <body>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-sm fixed-top" aria-label="navbar">
+         <div class="container-fluid ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".collapse" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+               <ul class="navbar-liz list-unstyled" me-auto mb-2 mb-sm-0">
+               <li class="nav-item">
+                  <a class="nav-link active navlink-liz" aria-current="page" href="/">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#questions_and_answers">Q and A</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#howto">How To</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a id="nav_dropdown" class="dropdown-toggle liz-colors" href="#" data-bs-toggle="dropdown" aria-expanded="false">Resume</a>
+                  <ul class="dropdown-menu">
+                     <li class="list-item"><a class="dropdown-item " href="#">Reverse Chronological</a></li>
+                     <li class="list-item"><a class="dropdown-item" href="#">By Technology</a></li>
+                     <li class="list-item"><a class="dropdown-item" href="#">QA Examples</a></li>
+                     <li class="list-item"><a class="dropdown-item" href="#">Code Cleanup and Bug Fixes</a></li>
+                     <li class="list-item"><a class="dropdown-item" href="#">Devops</a></li>
+                  </ul>
+               </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
       <div id="header" class="clearfix" class="container-fluid">
-        <a href="/" title="Home" rel="home" class="navbar-brand">
+        <a href="#main-wrapper" title="Home" rel="home" class="navbar-brand">
           <img src="images/logo.png" class="img-fluid float-start" alt="cat logo, link to home">
         </a>
         <div class="header_words">
@@ -19,68 +50,50 @@
           <h3>A lifetime of learning</h3>
         </div>
       </div>
-      <!-- Navbar -->
-      <nav class="navbar-liz navbar-expand-sm " aria-label="navbar">
-        <div class="container-fluid ">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".collapse" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
-          </button> 
-          <div class="collapse navbar-collapse" id="navbarsExample03">
-            <ul class="navbar-liz list-unstyled" me-auto mb-2 mb-sm-0">
-              <li class="nav-item">
-                <a class="nav-link active navlink-liz" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a id="nav_dropdown" class="dropdown-toggle liz-colors" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                <ul class="dropdown-menu">
-                  <li class="list-item"><a class="dropdown-item " href="#">Action</a></li>
-                  <li class="list-item"><a class="dropdown-item" href="#">Another action</a></li>
-                  <li class="list-item"><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-        <div id="main-wrapper" class="layout-main-wrapper clearfix">
-         <div id="main" class="container">
-            <div class="row row-offcanvas row-offcanvas-left clearfix">
-               <main class="main-content col" id="content" role="main">
-                  <section class="section">
-                     <a id="main-content" tabindex="-1"></a>
-                     <div id="block-ivycreeknaturalareawall" class="block">
-                        <div class="content">
-                           <div class="clearfix">
-                             <figure class="figure">
-                                <img src="images/Ivy_natural_area_old_wall_smaller_1.png" class="figure-img img-fluid rounded" alt="Ivy Natural Area, Charlottesville, VA">
-                                <figcaption class="figure-caption text-center">Ivy Creek Natural Area, Charlottesville, VA</figcaption>
-                              </figure>
-                              <p>&nbsp;</p>
-                           </div>
+      <div id="main-wrapper" class="layout-main-wrapper clearfix">
+      <div id="main" class="container">
+         <div class="row row-offcanvas row-offcanvas-left clearfix">
+            <main class="main-content col" id="content" role="main">
+               <section class="section">
+                  <a id="main-content" tabindex="-1"></a>
+                  <div id="block-ivycreeknaturalareawall" class="block">
+                     <div class="content">
+                        <div class="clearfix">
+                           <figure class="figure">
+                              <img src="images/Ivy_natural_area_old_wall_smaller_1.png" class="figure-img img-fluid rounded" alt="Ivy Natural Area, Charlottesville, VA">
+                              <figcaption class="figure-caption text-center">Ivy Creek Natural Area, Charlottesville, VA</figcaption>
+                           </figure>
+                           <p>&nbsp;</p>
                         </div>
                      </div>
-                  </section>
-               </main>
-               <div class="sidebar_first sidebar col-md-4 order-first" id="sidebar_first">
-                  <aside class="section" role="complementary">
-                     <div id="block-lizbarrio-elizabethschleysportfolio" class="block block-block-content block-block-contentacd34eb6-664a-46d3-b35d-74257c4c34fd">
-                        <h2>Elizabeth Schley's Portfolio</h2>
-                        <div class="content">
-                           <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item">
-                              <p>This site is a Drupal Demo in my <a href="https://lizschley.com/" target="_blank" rel="noopener noreferrer">Portfolio Site</a>. After investigating Drupal, I realized it is a programmer's content management system.&nbsp; Success in Drupal requires programming in PHP, CSS and HTML and even some <a href="https://aws.amazon.com/devops/what-is-devops/" target="_blank" rel="noopener noreferrer">devops</a> to be successful. Upon this realization, I created this demo site.&nbsp;Here is&nbsp;some of my other <a href="https://lizschley.com/projects/study/ordered_paragraphs/content-management" target="_blank" rel="noopener noreferrer">content management experience</a>.</p>
-                           </div>
-                        </div>
-                     </div>
-                  </aside>
+                  </div>
+               </section>
+            </main>
+            <div class="sidebar_first sidebar col-md-4 order-first" id="sidebar_first">
+               <h3>This Site</h3>
+               <div class="content">
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque labore ad totam temporibus error optio fugiat sint doloribus quod omnis impedit, harum expedita facere beatae rerum. Rerum iusto repudiandae modi! Architecto consequuntur ipsam doloribus id libero eligendi velit fugit nam non alias error, animi minima sit nostrum! Aut, incidunt nam. 
+                  </p>
+                  <p>
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia vero, iusto beatae consequatur voluptatem dolore! Commodi accusantium voluptates vitae consequatur.
+                  </p>
                </div>
             </div>
          </div>
+      </div>
+      </div>
+      <div id="questions_and_answers" class="container-fluid"></div>
+         <h3>Questions and Answers</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga debitis quis aliquid id nobis quaerat eligendi! Ea porro modi illo obcaecati voluptatum voluptates illum eligendi laborum quod. Et, molestiae.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis adipisci sed aliquam non doloremque commodi laboriosam necessitatibus placeat nisi porro modi, accusantium delectus culpa quasi voluptas distinctio numquam hic ipsa inventore consequuntur! Expedita minima ullam et vel eveniet officia ab modi accusamus labore dolor eius veritatis a numquam itaque illum, dolore adipisci excepturi quibusdam. Laborum quidem incidunt perspiciatis!
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam labore saepe at aperiam aliquid voluptate, veritatis enim itaque praesentium dolore impedit in dolorum quam quas fugit quod atque quaerat inventore incidunt! Temporibus sapiente repudiandae rerum reprehenderit, iste quam nihil mollitia maxime a sit distinctio eos debitis recusandae laborum facere veritatis, expedita voluptatem voluptates non corrupti? Dicta atque odio iusto expedita nisi magni vero tempore, impedit deserunt. Vel perferendis reiciendis rerum autem? Voluptas repellat assumenda inventore! Blanditiis ipsam minus quaerat consectetur officiis sint id nam nihil molestias eaque, quos, sapiente placeat ratione ipsa magni quo cumque vitae modi quidem velit inventore?</p>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos minima maiores explicabo facere sint sunt exercitationem sit quam ipsum commodi, praesentium soluta temporibus qui fugit tempora nulla consequuntur consectetur, ea, eos ducimus fugiat eligendi? Sequi tenetur dolorum quasi a corporis, veritatis adipisci eligendi alias incidunt porro reprehenderit non, expedita beatae quisquam enim praesentium. Sit suscipit necessitatibus perferendis aperiam provident iure consequatur reiciendis officiis debitis qui consequuntur placeat, tempore sequi? Itaque, aliquam. Natus iste adipisci, architecto repellat reprehenderit sed nihil qui!</p>
+      </div>
+      <div id="howto" class="container-fluid"></div>
+            <h3>How To</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga debitis quis aliquid id nobis quaerat eligendi! Ea porro modi illo obcaecati voluptatum voluptates illum eligendi laborum quod. Et, molestiae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis adipisci sed aliquam non doloremque commodi laboriosam necessitatibus placeat nisi porro modi, accusantium delectus culpa quasi voluptas distinctio numquam hic ipsa inventore consequuntur! Expedita minima ullam et vel eveniet officia ab modi accusamus labore dolor eius veritatis a numquam itaque illum, dolore adipisci excepturi quibusdam. Laborum quidem incidunt perspiciatis!</p>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
