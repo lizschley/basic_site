@@ -55,3 +55,9 @@ a.navlink, a.dropdown-toggle {
 .navbar-liz{
     display: inline-flex;
  }
+
+ .navbar-toggler-icon{
+    width: .75em;
+    height: .75em;
+ }
+ 

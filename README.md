@@ -1,4 +1,7 @@
-# Basic Website
-This site is hosted on HostGator and the pricing plan only allows html, css and javascript.
+# Inquiries and Observation
+## A basic website
+This site is hosted on HostGator and uses bootstrap 5.3.2: html, css and javascript.
 
-It's purpose is to communicate with people, though it is one-way, though I may add an email address.
+[Inquiries and Observation](https://schley.tech)
+
+Its eventual purpose will help people solve their technical issues and to share information.  Currently, it is a vehicle to share an in-depth profile of my technical expertise.
