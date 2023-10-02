@@ -7,7 +7,8 @@ body {
 }
 
 body #header {
-    padding: 20px;
+    margin-top: 38px;
+    padding: 15px;
     color: #FEF9E7;
     background-color: #fef9e7;
     background-image: linear-gradient(to bottom,#006600 0%,#fef9e7 100%);
@@ -43,5 +44,5 @@ a.dropdown-item {
   --bs-dropdown-bg: #FEF9E7;;
   --bs-dropdown-border-color: #006600;
   --bs-dropdown-link-hover-color: hsl(120, 100%, 40%);
-  --bs-dropdown-link-active-color: hsl(120, 100%, 40%);;\
+  --bs-dropdown-link-active-color: hsl(120, 100%, 40%);
 }

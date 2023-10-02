@@ -5,23 +5,26 @@
 }
 
 a#nav_dropdown.liz-colors.dropdown-toggle {
-  color: rgb(0, 102, 0);
-  text-decoration: none;
+    color: #FEF9E7;
+    text-decoration: none;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
 }
 
 li.nav-item {
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
-a.navlink {
+a.navlink, a.dropdown-toggle {
     text-decoration: none;
 }
 
-a.dropdown-toggle {
-    text-decoration: none;
-}
-
-.navbar-liz{
+.navbar{
+    background-color: #006600;
+    background-image: linear-gradient(to bottom,#0e0e0e 0%,#006600 100%);    
+    color: #FEF9E7;
     --bs-navbar-padding-x: 0;
     --bs-navbar-padding-y: 0.5rem;
     --bs-navbar-brand-padding-y: 0.3125rem;
@@ -31,7 +34,8 @@ a.dropdown-toggle {
     --bs-navbar-toggler-padding-y: 0.25rem;
     --bs-navbar-toggler-padding-x: 0.75rem;
     --bs-navbar-toggler-font-size: 1.25rem;
-    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     --bs-navbar-toggler-border-radius: var(--bs-border-radius);
     --bs-navbar-toggler-focus-width: 0.25rem;
     --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
@@ -39,17 +43,21 @@ a.dropdown-toggle {
     --bs-navbar-active-color:  hsl(120, 100%, 40%);
     --bs-navbar-brand-color: #0dcaf0;
     --bs-navbar-brand-hover-color: #0dcaf0;
-    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
     text-decoration: none;
     text-decoration: none;
-    position: relative;
+    position: fixed;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.container-fluid .navbar-liz{
+.navbar-liz{
     display: inline-flex;
  }
 
+ .navbar-toggler-icon{
+    width: .75em;
+    height: .75em;
+ }
+ 
