@@ -22,7 +22,7 @@ function handleProfileSwitcherChange() {
     }
 }
 
-if (switcher !== null || switcher !== undefined) {
+if (switcher !== null && switcher !== undefined) {
     switcher.addEventListener('change', handleProfileSwitcherChange);
 }
 
@@ -62,4 +62,3 @@ function ids_data(toggle_id) {
     }
     return id_data
 }
-
