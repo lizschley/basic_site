@@ -1,36 +1,47 @@
-var elements = document.getElementsByClassName("riddle_answers");
+const answers = document.querySelectorAll(".riddle_answers");
+const close_buttons = document.querySelectorAll(".close_modal");
 
-var find_id_for_modal = function() {
-    var attribute = this.getAttribute("id");
-    alert(attribute);
+answers.forEach(function(element) {
+    //alert('adding listener for id=' + element.getAttribute('id'))
+    element.addEventListener('click', find_id_for_modal);
+  });
+
+function find_id_for_modal() {
+  const attribute = this.getAttribute("id");
+  //alert(attribute);
+  const modalElement = document.getElementById('riddle_answer_modal');
+  const modal = new bootstrap.Modal(modalElement);
+  const modalBody = document.getElementById('riddle_answer_modal_text');
+  const modal_text = riddle_modal(attribute);
+  modalBody.innerHTML = modal_text;
+  modal.show(); 
+  allow_close_riddle_modal(modal);
+}  
+
+function riddle_modal(id) {
+    alert('id == ' + id);
+    switch(id) {
+        case "first_emma_answer":
+          text = '<p>In the charade, "my first" is woe and "my second" is man, so that "my whole" is woe-man = woman (boo! groan! hiss!, or is it?).</p>';
+          break;
+        case "second_emma_answer":
+          text = "2 - I am not a fan of orange.";
+          break;
+        case "third_emma_answer":
+          text = "3 - How you like them apples?";
+          break;
+        default:
+          text = "did not find - I have never heard of that fruit...";
+      }    
+   return text;
 };
 
-for (var i = 0; i < elements.length; i++) {
-    elements[i].addEventListener('click', find_id_for_modal, false);
+function allow_close_riddle_modal(modal) {
+  var close_ids = ['#x_close', '#word_close'];
+  var len = close_ids.length;
+  for (var idx = 0; idx < len; idx++) {
+    document.querySelector(close_ids[idx]).addEventListener('click', function() {
+      modal.hide();
+    });      
+  }
 }
-
-function riddle_modal(key) {
-    var nav_code = 
-    `<div class="modal fade" id="answer_modal">
-       <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <h3 id="subtitle_modal_title" class="subtitle_modal_title"></h3>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-        <!-- Modal body -->
-        <div id="subtitle_modal_para" class="modal-body">
-        </div>
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-    </div>  `
-   return {
-    modal_subtitle: use_subtitle,
-    modal_text: 'In the charade, "my first" is woe and "my second" is man, so that "my whole" is woe-man = woman (boo! groan! hiss!).'
-   };
-};
