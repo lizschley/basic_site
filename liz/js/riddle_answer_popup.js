@@ -8,7 +8,6 @@ answers.forEach(function(element) {
 
 function find_id_for_modal() {
   const attribute = this.getAttribute("id");
-  //alert(attribute);
   const modalElement = document.getElementById('riddle_answer_modal');
   const modal = new bootstrap.Modal(modalElement);
   const modal_body = document.getElementById('riddle_answer_modal_text');
@@ -21,7 +20,6 @@ function find_id_for_modal() {
 }  
 
 function riddle_modal(id) {
-    alert('id == ' + id);
     switch(id) {
         case "first_emma_answer":
           text = '<p>In the charade, "my first" is woe and "my second" is man, so that "my whole" is woe-man = woman (boo! groan! hiss!, or is it?).</p>';
