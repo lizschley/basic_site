@@ -1,0 +1,17 @@
+.accordion-button {
+    --bs-accordion-btn-color: #006600;
+    --bs-accordion-btn-bg: #f7f3db;
+}
+
+.accordion {
+    --bs-accordion-color: #006600;
+    --bs-accordion-bg: #FEF9E7;
+    --bs-accordion-border-color: hsl(33, 81%, 25%);
+    --bs-accordion-btn-focus-border-color: hsl(33, 81%, 25%);
+    /* --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #f5da43; */
+}
+
+.accordion-button:not(.collapsed) {
+    --bs-accordion-active-color: hsl(33, 81%, 25%);
+    --bs-accordion-active-bg: #FEF9E7;
+}
