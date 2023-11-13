@@ -6,7 +6,7 @@ body {
     color: #006600;
 }
 
-body #riddle_answer_modal {
+body #answer_modal_element {
   background-color: #FEF9E7;
   color: #006600;
 }

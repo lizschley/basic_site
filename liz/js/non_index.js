@@ -25,7 +25,6 @@ function navbar_html() {
           <li class='nav-item'>
              <a class='nav-link' href='resume.html'>Resume</a>
           </li>
-
        </ul>
     </div>
    </div>`

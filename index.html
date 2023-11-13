@@ -1,157 +1,158 @@
 <!doctype html>
-<html lang='en'>
+<html lang="en">
    <head>
-      <meta charset='utf-8'>
-      <meta name='viewport' content='width=device-width, initial-scale=1'>
-      <link rel='shortcut icon' href='liz/images/logo.png' type='image/png'>
-      <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN' crossorigin='anonymous'>
-      <link href='liz/css/navbar.css' id='navbar_css' media='screen' rel='stylesheet'/>
-      <link href='liz/css/site.css' id='site_css' media='screen' rel='stylesheet'/>
-      <script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js' defer integrity='sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r' crossorigin='anonymous'></script>
-      <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js' defer integrity='sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+' crossorigin='anonymous'></script>
-      <script src='https://kit.fontawesome.com/b528c2c7fa.js' defer crossorigin='anonymous'></script>
-      <script id='site_js' src='liz/js/site.js' defer type='text/javascript'></script>
-      <script id='riddle_answer_js' src='liz/js/riddle_answer_popup.js' defer type='text/javascript'></script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="liz/images/logo.png" type="image/png">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link href="liz/css/navbar.css" id="navbar_css" media="screen" rel="stylesheet"/>
+      <link href="liz/css/site.css" id="site_css" media="screen" rel="stylesheet"/>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" defer integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/b528c2c7fa.js" defer crossorigin="anonymous"></script>
+      <script src="liz/js/site.js" defer type="text/javascript"></script>
+      <script src="liz/js/common_modal.js" defer type="text/javascript"></script>
+      <script src="liz/js/data_riddle_answer.js" defer type="text/javascript"></script>
       <title>Inquiries and Observations | Inquiries and Observations </title>
    </head>
    <body>
       <!-- Navbar -->
-      <nav id='index_nav_id' class='navbar navbar-expand-sm fixed-top' aria-label='navbar'>
-         <div class='container-fluid '>
-            <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='.collapse' aria-controls='navbarsExample03' aria-expanded='false' aria-label='Toggle navigation'>
-               <span class='navbar-toggler-icon'></span>
+      <nav id="index_nav_id" class="navbar navbar-expand-sm fixed-top" aria-label="navbar">
+         <div class="container-fluid ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".collapse" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
             </button> 
-            <div class='collapse navbar-collapse' id='navbar-collapse'>
-               <ul class='navbar-liz list-unstyled me-auto mb-2 mb-sm-0'>
-               <li class='nav-item'>
-                  <a class='nav-link active navlink-liz' aria-current='page' href='#'>Home</a>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+               <ul class="navbar-liz list-unstyled me-auto mb-2 mb-sm-0">
+               <li class="nav-item">
+                  <a class="nav-link active navlink-liz" aria-current="page" href="#">Home</a>
                </li>
-               <li class='nav-item dropdown'>
-                  <a id='nav_dropdown' class='dropdown-toggle liz-colors' href='#' data-bs-toggle='dropdown' aria-expanded='false'>Q and A</a>
-                  <ul class='dropdown-menu'>
-                     <li class='list-item'><a class='dropdown-item ' href='liz/tech_q_a.html'>Technical</a></li>
-                     <li class='list-item'><a class='dropdown-item' href='liz/plants_q_a.html'>Insect Habitat Facilitation</a></li>
+               <li class="nav-item dropdown">
+                  <a id="nav_dropdown" class="dropdown-toggle liz-colors" href="#" data-bs-toggle="dropdown" aria-expanded="false">Q and A</a>
+                  <ul class="dropdown-menu">
+                     <li class="list-item"><a class="dropdown-item " href="liz/tech_q_a.html">Technical</a></li>
+                     <li class="list-item"><a class="dropdown-item" href="liz/plants_q_a.html">Insect Habitat Facilitation</a></li>
                   </ul>
                </li>
-               <li class='nav-item'>
-                  <a class='nav-link' href='liz/how_to.html'>How To</a>
+               <li class="nav-item">
+                  <a class="nav-link" href="liz/how_to.html">How To</a>
                </li>
-               <li class='nav-item'>
-                  <a class='nav-link' href='liz/resume.html'>Resume</a>
+               <li class="nav-item">
+                  <a class="nav-link" href="liz/resume.html">Resume</a>
                </li>
                </ul>
             </div>
          </div>
       </nav>
-      <div id='header' class='clearfix' class='container-fluid'>
-        <a href='#main-wrapper' title='Home' rel='home' class='navbar-brand'>
-          <img src='liz/images/logo.png' class='img-fluid float-start' alt='cat logo, link to home'>
+      <div id="header" class="clearfix" class="container-fluid">
+        <a href="#main-wrapper" title="Home" rel="home" class="navbar-brand">
+          <img src="liz/images/logo.png" class="img-fluid float-start" alt="cat logo, link to home">
         </a>
-        <div class='header_words'>
+        <div class="header_words">
           <h1>Inquiries and Observations</h1>
           <h3>A lifetime of learning</h3>
         </div>
       </div>
-      <div id='main' class='container-fluid px-5 clearfix'>
-         <div class='row'>
-            <div class='pt4'>
-               <h3 id='home_h3_id'>Inquiries and Observation Home</h3>
+      <div id="main" class="container-fluid px-5 clearfix">
+         <div class="row">
+            <div class="pt4">
+               <h3 id="home_h3_id">Inquiries and Observation Home</h3>
                <br />
-               <figure class='float-end px-2'>
-                  <img src='liz/images/Ivy_natural_area_old_wall_smaller_1.png' class='img-fluid rounded imgshadow' alt='Ivy Natural Area, Charlottesville, VA'>
-                  <figcaption class='figure-caption text-center'>Ivy Creek Natural Area, Charlottesville, VA</figcaption>
+               <figure class="float-end px-2">
+                  <img src="liz/images/Ivy_natural_area_old_wall_smaller_1.png" class="img-fluid rounded imgshadow" alt="Ivy Natural Area, Charlottesville, VA">
+                  <figcaption class="figure-caption text-center">Ivy Creek Natural Area, Charlottesville, VA</figcaption>
                </figure>  
                <p>My motivation for this website is to play around with and provide information about web development related technology. The actual site itself only uses Javascript, HTML and CSS, though Bootstrap helps me not reinvent the wheel. </p>
                <p>Please Note - I am not and have no plans to become a UI expert, therefore am not sweating the details.</p>
                <p>Once I have some content, I plan to write some UI tests.</p>
-               <p>First step, write some content...  this was a problem until the charades in <a href='https://www.goodreads.com/book/show/6969.Emma' target="_blank">Jane Austen's Emma</a> popped into my head.  Then I thought of the riddles in <a href='https://www.goodreads.com/book/show/5907.The_Hobbit' target="_blank">JRR Tolkien's Hobbit</a>. Since <a href='https://wikidiff.com/riddle/charade' target="_blank">charades</a> (like the game charades) are a type of riddle and riddles can be fun, I am making the home page content copied and pasted riddles.</p> 
+               <p>First step, write some content...  this was a problem until the charades in <a href="https://www.goodreads.com/book/show/6969.Emma" target="_blank">Jane Austen's Emma</a> popped into my head.  Then I thought of the riddles in <a href="https://www.goodreads.com/book/show/5907.The_Hobbit" target="_blank">JRR Tolkien's Hobbit</a>. Since <a href="https://wikidiff.com/riddle/charade" target="_blank">charades</a> (like the game charades) are a type of riddle and riddles can be fun, I am making the home page content copied and pasted riddles.</p> 
                <p>
-                  <strong>Sections: </strong><a href='#anglo_saxon_riddles'>Anglo Saxon Riddles</a>, <a href='#modern_riddles'>Modern Riddles</a>, <a href='#emma_riddles'>Emma Riddles</a>, <a href='#hobbit_riddles'>Hobbit Riddles</a> 
+                  <strong>Sections: </strong><a href="#anglo_saxon_riddles">Anglo Saxon Riddles</a>, <a href="#modern_riddles">Modern Riddles</a>, <a href="#emma_riddles">Emma Riddles</a>, <a href="#hobbit_riddles">Hobbit Riddles</a> 
                </p> 
             </div>   
          </div> 
-         <div class='row'>
-            <h4 id='anglo_saxon_riddles' class="find_headers">Anglo Saxon Riddles</h4>
-            <p><a href='https://www.abdn.ac.uk/sll/disciplines/english/beowulf/riddle.htm' target="_blank">Source for all Anglo Saxon riddles</a></p>
+         <div class="row">
+            <h4 id="anglo_saxon_riddles" class="find_headers">Anglo Saxon Riddles</h4>
+            <p><a href="https://www.abdn.ac.uk/sll/disciplines/english/beowulf/riddle.htm" target="_blank">Source for all Anglo Saxon riddles</a></p>
             <div class="row justify-content-start">
                <div class="col-6">
-                  <p><strong>Anglo Saxon Riddle One</strong> <br />A wonderful warrior exists on earth.<br />Two dumb creatures make him grow bright between them.<br />Enemies use him against one another.<br />His strength is fierce but a woman can tame him.<br />He will meekly serve both men and women<br />If they know the trick of looking after him<br />And feeding him properly.<br />He makes people happy.<br />He makes their lives better.<br />But if they let him grow proud<br />This ungrateful friend soon turns against them.<br /><a id='anglo_saxon_answer_one' class='btn riddle_answers btn-sm' href='#'>First Anglo Saxon Answer</a></p>
-                  <p><strong>Anglo Saxon Riddle Two</strong> <br />When I am alive I do not speak.<br />Anyone who wants to takes me captive and cuts off my head.<br />They bite my bare body<br />I do no harm to anyone unless they cut me first.<br />Then I soon make them cry.<br /><a id='anglo_saxon_answer_two' class='btn riddle_answers btn-sm' href='#'>Second Anglo Saxon Answer</a></p>
-                  <p><strong>Anglo Saxon Riddle Three</strong> <br />My home is not quiet but I am not loud.<br />The lord has meant us to journey together.<br />I am faster than he and sometimes stronger,<br />But he keeps on going for longer.<br />Sometimes I rest but he runs on.<br />For as long as I am alive I live in him.<br />If we part from one another<br />It is I who will die.<br /><a id='anglo_saxon_answer_three' class='btn riddle_answers btn-sm' href='#'>Third Anglo Saxon Answer</a></p>
+                  <p><strong>Anglo Saxon Riddle One</strong> <br />A wonderful warrior exists on earth.<br />Two dumb creatures make him grow bright between them.<br />Enemies use him against one another.<br />His strength is fierce but a woman can tame him.<br />He will meekly serve both men and women<br />If they know the trick of looking after him<br />And feeding him properly.<br />He makes people happy.<br />He makes their lives better.<br />But if they let him grow proud<br />This ungrateful friend soon turns against them.<br /><a id="anglo_saxon_answer_one" class="btn modal_answer btn-sm" href="#">First Anglo Saxon Answer</a></p>
+                  <p><strong>Anglo Saxon Riddle Two</strong> <br />When I am alive I do not speak.<br />Anyone who wants to takes me captive and cuts off my head.<br />They bite my bare body<br />I do no harm to anyone unless they cut me first.<br />Then I soon make them cry.<br /><a id="anglo_saxon_answer_two" class="btn modal_answer btn-sm" href="#">Second Anglo Saxon Answer</a></p>
+                  <p><strong>Anglo Saxon Riddle Three</strong> <br />My home is not quiet but I am not loud.<br />The lord has meant us to journey together.<br />I am faster than he and sometimes stronger,<br />But he keeps on going for longer.<br />Sometimes I rest but he runs on.<br />For as long as I am alive I live in him.<br />If we part from one another<br />It is I who will die.<br /><a id="anglo_saxon_answer_three" class="btn modal_answer btn-sm" href="#">Third Anglo Saxon Answer</a></p>
                </div>
                <div class="col-6">
-                  <p><strong>Anglo Saxon Riddle Four</strong> <br />I am all on my own,<br />Wounded by iron weapons and scarred by swords.<br />I often see battle.<br />I am tired of fighting.<br />I do not expect to be allowed to retire from warfare<br />Before I am completely done for.<br />At the wall of the city, I am knocked about<br />And bitten again and again.<br />Hard edged things made by the blacksmith's hammer attack me.<br />Each time I wait for something worse.<br />I have never been able to find a doctor who could make me better<br />Or give me medicine made from herbs.<br />Instead the sword gashes all over me grow bigger day and night.<br /><a id='anglo_saxon_answer_four' class='btn riddle_answers btn-sm' href='#'>Fourth Anglo Saxon Answer</a></p>
-                  <p><strong>Anglo Saxon Riddle Five</strong> (bird) <br />I was abandoned by my mother and father.<br />I wasn't yet breathing.<br />A kind woman covered me with clothes,<br />Kept me and looked after me,<br />Cuddled me as close as if I had been her own child.<br />Under that covering I grew and grew.<br />I was unkind to my adopted brothers and sisters.<br />This lovely woman fed me<br />Until I was big enough to set out on my own.<br />She had fewer of her own dear sons and daughters because she did so.<br /><a id='anglo_saxon_answer_five' class='btn riddle_answers btn-sm' href='#'>Fifth Anglo Saxon Answer</a></p>
+                  <p><strong>Anglo Saxon Riddle Four</strong> <br />I am all on my own,<br />Wounded by iron weapons and scarred by swords.<br />I often see battle.<br />I am tired of fighting.<br />I do not expect to be allowed to retire from warfare<br />Before I am completely done for.<br />At the wall of the city, I am knocked about<br />And bitten again and again.<br />Hard edged things made by the blacksmith's hammer attack me.<br />Each time I wait for something worse.<br />I have never been able to find a doctor who could make me better<br />Or give me medicine made from herbs.<br />Instead the sword gashes all over me grow bigger day and night.<br /><a id="anglo_saxon_answer_four" class="btn modal_answer btn-sm" href="#">Fourth Anglo Saxon Answer</a></p>
+                  <p><strong>Anglo Saxon Riddle Five</strong> (bird) <br />I was abandoned by my mother and father.<br />I wasn't yet breathing.<br />A kind woman covered me with clothes,<br />Kept me and looked after me,<br />Cuddled me as close as if I had been her own child.<br />Under that covering I grew and grew.<br />I was unkind to my adopted brothers and sisters.<br />This lovely woman fed me<br />Until I was big enough to set out on my own.<br />She had fewer of her own dear sons and daughters because she did so.<br /><a id="anglo_saxon_answer_five" class="btn modal_answer btn-sm" href="#">Fifth Anglo Saxon Answer</a></p>
                </div>
             </div>
-            <h4 id='modern_riddles' class="find_headers">Modern Riddles</h4>
-            <p><a href='https://www.riddles.com/posts' target="_blank">Source for all Modern riddles</a></p>
+            <h4 id="modern_riddles" class="find_headers">Modern Riddles</h4>
+            <p><a href="https://www.riddles.com/posts" target="_blank">Source for all Modern riddles</a></p>
             <div class="row justify-content-start">
                <div class="col-6">                  
-                  <p><strong>Modern Riddle One</strong> <br />Through a sea of green and islands of brown, leaving a crystal path behind, safe inside a spiral cave, preparing to come out again. What animal am I?<br /><a id='modern_answer_one' class='btn riddle_answers btn-sm' href='#'>First Modern Answer</a></p>
-                  <p><strong>Modern Riddle Two</strong> <br />What room do ghosts avoid?<br /><a id='modern_answer_two' class='btn riddle_answers btn-sm' href='#'>Second Modern Answer</a></p>
-                  <p><strong>Modern Riddle Three</strong> <br />This object can be driven, but has no wheels, and can also be sliced and remain whole. What is it?<br /><a id='modern_answer_three' class='btn riddle_answers btn-sm' href='#'>Third Modern Answer</a></p>
-                  <p><strong>Modern Riddle Four</strong> <br /> From dawn to dusk I soar through the sky, A thunderous voice, but silent I fly. Through the darkest depths I will not die, Yet I can not be seen by the naked eye. What am I?<br /><a id='modern_answer_four' class='btn riddle_answers btn-sm' href='#'>Fourth Modern Answer</a></p>
-                  <p><strong>Modern Riddle Five</strong> <br />I welcome the day with a show of light, I steathily came here in the night. I bathe the earthy stuff at dawn, But by the noon, alas! I'm gone. What am I?<br /><a id='modern_answer_five' class='btn riddle_answers btn-sm' href='#'>Fifth Modern Answer</a></p>
+                  <p><strong>Modern Riddle One</strong> <br />Through a sea of green and islands of brown, leaving a crystal path behind, safe inside a spiral cave, preparing to come out again. What animal am I?<br /><a id="modern_answer_one" class="btn modal_answer btn-sm" href="#">First Modern Answer</a></p>
+                  <p><strong>Modern Riddle Two</strong> <br />What room do ghosts avoid?<br /><a id="modern_answer_two" class="btn modal_answer btn-sm" href="#">Second Modern Answer</a></p>
+                  <p><strong>Modern Riddle Three</strong> <br />This object can be driven, but has no wheels, and can also be sliced and remain whole. What is it?<br /><a id="modern_answer_three" class="btn modal_answer btn-sm" href="#">Third Modern Answer</a></p>
+                  <p><strong>Modern Riddle Four</strong> <br /> From dawn to dusk I soar through the sky, A thunderous voice, but silent I fly. Through the darkest depths I will not die, Yet I can not be seen by the naked eye. What am I?<br /><a id="modern_answer_four" class="btn modal_answer btn-sm" href="#">Fourth Modern Answer</a></p>
+                  <p><strong>Modern Riddle Five</strong> <br />I welcome the day with a show of light, I steathily came here in the night. I bathe the earthy stuff at dawn, But by the noon, alas! I'm gone. What am I?<br /><a id="modern_answer_five" class="btn modal_answer btn-sm" href="#">Fifth Modern Answer</a></p>
                </div>
                <div class="col-6">
-                  <p><strong>Modern Riddle Six</strong> <br />You walk into your house you see three doors you've never seen before. One vampire bat that will suck your blood. Two zombies that will eat your brain. Three a lion that hasn't eaten for over six months. Which one do you go through?<br /><a id='modern_answer_six' class='btn riddle_answers btn-sm' href='#'>Sixth Modern Answer</a></p>
-                  <p><strong>Modern Riddle Seven</strong> <br />I'm teary-eyed but never cry, silver-tongued, but never lie. double-winged, but never fly, air-cooled, but never dry. What am I?<br /><a id='modern_answer_seven' class='btn riddle_answers btn-sm' href='#'>Seventh Modern Answer</a></p>
-                  <p><strong>Modern Riddle Eight</strong> <br />One-fourth of the population of a newly discovered planet has 4 legs. The rest have two legs. There are 60 legs in total. How big is the population of the newly discovered planet?<br /><a id='modern_answer_eight' class='btn riddle_answers btn-sm' href='#'>Eight Modern Answer</a></p>
-                  <p><strong>Modern Riddle Nine</strong> <br />Double my number, I'm less than a score, and half of my number is less than four. Add one to my double when bakers are near, days of the week are still greater, I fear. What am I?<br /><a id='modern_answer_nine' class='btn riddle_answers btn-sm' href='#'>Ninth Modern Answer</a></p>
-                  <p><strong>Modern Riddle Ten</strong> <br />Upside-down or on its side, this merry-go-round Is quite a ride. In the summer heat, It is quite a treat with blades so dull, that they will not slice. It spins too fast, for your sight. What is this ride?<br /><a id='modern_answer_ten' class='btn riddle_answers btn-sm' href='#'>Tenth Modern Answer</a></p>
+                  <p><strong>Modern Riddle Six</strong> <br />You walk into your house you see three doors you've never seen before. One vampire bat that will suck your blood. Two zombies that will eat your brain. Three a lion that hasn't eaten for over six months. Which one do you go through?<br /><a id="modern_answer_six" class="btn modal_answer btn-sm" href="#">Sixth Modern Answer</a></p>
+                  <p><strong>Modern Riddle Seven</strong> <br />I'm teary-eyed but never cry, silver-tongued, but never lie. double-winged, but never fly, air-cooled, but never dry. What am I?<br /><a id="modern_answer_seven" class="btn modal_answer btn-sm" href="#">Seventh Modern Answer</a></p>
+                  <p><strong>Modern Riddle Eight</strong> <br />One-fourth of the population of a newly discovered planet has 4 legs. The rest have two legs. There are 60 legs in total. How big is the population of the newly discovered planet?<br /><a id="modern_answer_eight" class="btn modal_answer btn-sm" href="#">Eight Modern Answer</a></p>
+                  <p><strong>Modern Riddle Nine</strong> <br />Double my number, I'm less than a score, and half of my number is less than four. Add one to my double when bakers are near, days of the week are still greater, I fear. What am I?<br /><a id="modern_answer_nine" class="btn modal_answer btn-sm" href="#">Ninth Modern Answer</a></p>
+                  <p><strong>Modern Riddle Ten</strong> <br />Upside-down or on its side, this merry-go-round Is quite a ride. In the summer heat, It is quite a treat with blades so dull, that they will not slice. It spins too fast, for your sight. What is this ride?<br /><a id="modern_answer_ten" class="btn modal_answer btn-sm" href="#">Tenth Modern Answer</a></p>
 
                </div>
             </div>
-            <h4 id='emma_riddles' class="find_headers">Riddles and Charades from Emma, by Jane Austen</h4>
-            <p><a href='https://www.pemberley.com/janeinfo/emmchrad.html' target="_blank">Source for all Emma riddles</a></p>
+            <h4 id="emma_riddles" class="find_headers">Riddles and Charades from Emma, by Jane Austen</h4>
+            <p><a href="https://www.pemberley.com/janeinfo/emmchrad.html" target="_blank">Source for all Emma riddles</a></p>
             <div class="row justify-content-start">
                <div class="col-6">
-                  <p><strong>First Emma Charade</strong> <br />My first doth affliction denote<br />Which my second is destin'd to feel.<br />And my whole is the best antidote<br />That affliction to soften and heal.<br /><a id='first_emma_answer' class='btn riddle_answers btn-sm' data_target='#riddle_answer_modal' href='#'>First Emma Answer</a></p>
-                  <p><strong>Second Emma Charade</strong> <br />My first displays the wealth and pomp of kings,<br />Lords of the earth! their luxury and ease.<br />Another view of man, my second brings,<br />Behold him there, the monarch of the seas!<br />But ah! united, what reverse we have!<br />Man's boasted power and freedom, all are flown;<br />Lord of the earth and sea, he bends a slave,<br />And woman, lovely woman, reigns alone.<br />Thy ready wit the word will soon supply,<br />May its approval beam in that soft eye!<br /><a id='second_emma_answer' class='btn riddle_answers btn-sm' data_target='#riddle_answer_modal' href='#'>Second Emma Answer</a></p>    
+                  <p><strong>First Emma Charade</strong> <br />My first doth affliction denote<br />Which my second is destin'd to feel.<br />And my whole is the best antidote<br />That affliction to soften and heal.<br /><a id="first_emma_answer" class="btn modal_answer btn-sm" data_target="#answer_modal_element" href="#">First Emma Answer</a></p>
+                  <p><strong>Second Emma Charade</strong> <br />My first displays the wealth and pomp of kings,<br />Lords of the earth! their luxury and ease.<br />Another view of man, my second brings,<br />Behold him there, the monarch of the seas!<br />But ah! united, what reverse we have!<br />Man's boasted power and freedom, all are flown;<br />Lord of the earth and sea, he bends a slave,<br />And woman, lovely woman, reigns alone.<br />Thy ready wit the word will soon supply,<br />May its approval beam in that soft eye!<br /><a id="second_emma_answer" class="btn modal_answer btn-sm" data_target="#answer_modal_element" href="#">Second Emma Answer</a></p>    
                </div>
                <div class="col-6">
-                  <p><strong>Emma Riddle</strong> <br />Kitty, a fair, but frozen maid,<br />Kindled a flame I still deplore;<br />The hood-wink'd boy I call'd in aid,<br />Much of his near approach afraid,<br />So fatal to my suit before.<br />At length, propitious to my pray'r,<br />The little urchin came;<br />At once he sought the midway air,<br />And soon he clear'd, with dextrous care,<br />The bitter relicks of my flame.<br />To Kitty, Fanny now succeeds,<br />She kindles slow, but lasting fires:<br />With care my appetite she feeds;<br />Each day some willing victim bleeds<br />To satisfy my strange desires.<br />Say, by what title, or what name,<br />Must I this youth address?<br />Cupid and he are not the same,<br />Tho' both can raise, or quench a flame --<br />I'll kiss you, if you guess.<br /><a id='third_emma_answer' class='btn riddle_answers btn-sm' href='#'>Third Emma Answer</a></p>
+                  <p><strong>Emma Riddle</strong> <br />Kitty, a fair, but frozen maid,<br />Kindled a flame I still deplore;<br />The hood-wink'd boy I call'd in aid,<br />Much of his near approach afraid,<br />So fatal to my suit before.<br />At length, propitious to my pray'r,<br />The little urchin came;<br />At once he sought the midway air,<br />And soon he clear'd, with dextrous care,<br />The bitter relicks of my flame.<br />To Kitty, Fanny now succeeds,<br />She kindles slow, but lasting fires:<br />With care my appetite she feeds;<br />Each day some willing victim bleeds<br />To satisfy my strange desires.<br />Say, by what title, or what name,<br />Must I this youth address?<br />Cupid and he are not the same,<br />Tho' both can raise, or quench a flame --<br />I'll kiss you, if you guess.<br /><a id="third_emma_answer" class="btn modal_answer btn-sm" href="#">Third Emma Answer</a></p>
                </div>
              </div>
-            <h4 id='hobbit_riddles' class="find_headers">Riddles and Charades from Hobbit, by JRR Tolkien</h4>
-            <p><a href='http://tolkien.cro.net/talesong/riddles.html' target="_blank">Source for all Hobbit riddles</a></p>
+            <h4 id="hobbit_riddles" class="find_headers">Riddles and Charades from Hobbit, by JRR Tolkien</h4>
+            <p><a href="http://tolkien.cro.net/talesong/riddles.html" target="_blank">Source for all Hobbit riddles</a></p>
             <div class="row justify-content-start">
                <div class="col-6">
-                  <p><strong>Gollum Riddle One</strong><br />What has roots as nobody sees,<br />Is taller than trees,<br />Up, up it goes,<br />And yet never grows?<br /><a id='hobbit_answer_one' class='btn riddle_answers btn-sm' href='#'>Hobbit Answer One</a></p>
-                  <p><strong>Bilbo Riddle Two</strong> <br />Thirty white horses on a red hill,<br />First they champ,<br />Then they stamp,<br />Then they stand still.<br /><a id='hobbit_answer_two' class='btn riddle_answers btn-sm' href='#'>Hobbit Answer Two</a></p>
-                  <p><strong>Gollum Riddle Three</strong><br />Voiceless it cries,<br />Wingless flutters,<br />Toothless bites,<br />Mouthless mutters.<br /><a id='hobbit_answer_three' class='btn riddle_answers btn-sm' href='#'>Hobbit Answer Three</a></p>
-                  <p><strong>Bilbo Riddle Four</strong> <br />A box without hinges, key, or lid,<br />Yet golden treasure inside is hid.<br /><a id='hobbit_answer_four' class='btn riddle_answers btn-sm' href='#'>Hobbit Answer Four</a></p>
-                  <p><strong>Gollum Riddle Five</strong> <br />It cannot be seen, cannot be felt,<br />Cannot be heard, cannot be smelt.<br />It lies behind stars and under hills,<br />And empty holes it fills.<br />It comes first and follows after,<br />Ends life, kills laughter.<br /><a id='hobbit_answer_five' class='btn riddle_answers btn-sm' href='#'>Hobbit Answer Five</a></p>
+                  <p><strong>Gollum Riddle One</strong><br />What has roots as nobody sees,<br />Is taller than trees,<br />Up, up it goes,<br />And yet never grows?<br /><a id="hobbit_answer_one" class="btn modal_answer btn-sm" href="#">Hobbit Answer One</a></p>
+                  <p><strong>Bilbo Riddle Two</strong> <br />Thirty white horses on a red hill,<br />First they champ,<br />Then they stamp,<br />Then they stand still.<br /><a id="hobbit_answer_two" class="btn modal_answer btn-sm" href="#">Hobbit Answer Two</a></p>
+                  <p><strong>Gollum Riddle Three</strong><br />Voiceless it cries,<br />Wingless flutters,<br />Toothless bites,<br />Mouthless mutters.<br /><a id="hobbit_answer_three" class="btn modal_answer btn-sm" href="#">Hobbit Answer Three</a></p>
+                  <p><strong>Bilbo Riddle Four</strong> <br />A box without hinges, key, or lid,<br />Yet golden treasure inside is hid.<br /><a id="hobbit_answer_four" class="btn modal_answer btn-sm" href="#">Hobbit Answer Four</a></p>
+                  <p><strong>Gollum Riddle Five</strong> <br />It cannot be seen, cannot be felt,<br />Cannot be heard, cannot be smelt.<br />It lies behind stars and under hills,<br />And empty holes it fills.<br />It comes first and follows after,<br />Ends life, kills laughter.<br /><a id="hobbit_answer_five" class="btn modal_answer btn-sm" href="#">Hobbit Answer Five</a></p>
                </div>
                <div class="col-6">
-                  <p><strong>Bilbo Riddle Six</strong> <br />An eye in a blue face<br />Saw an eye in a green face.<br />"That eye is like to this eye"<br />Said the first eye,<br /> "But in low place,<br />Not in high place."<br /><a id='hobbit_answer_six' class='btn riddle_answers btn-sm' href='#'>Hobbit Answer Six</a></p>
-                  <p><strong>Gollum Riddle Seven</strong> <br />Alive without breath,<br />As cold as death;<br />Never thirsty, ever drinking,<br />All in mail never clinking.<br /><a id='hobbit_answer_seven' class='btn riddle_answers btn-sm' href='#'>Hobbit Answer Seven</a></p>
-                  <p><strong>Bilbo Riddle Eight</strong> <br />No-legs lay on one-leg,<br />two-legs sat near on three-legs,<br />four-legs got some.<br /><a id='hobbit_answer_eight' class='btn riddle_answers btn-sm' href='#'>Hobbit Answer eight</a></p>
-                  <p><strong>Gollum Riddle Nine</strong><br />This thing all things devours:<br />Birds, beasts, trees, flowers;<br />Gnaws iron, bites steel;<br />Grinds hard stones to meal;<br />Slays king, ruins town,<br />And beats high mountain down.<br /><a id='hobbit_answer_nine' class='btn riddle_answers btn-sm' href='#'>Hobbit Answer Nine</a></p>
-
+                  <p><strong>Bilbo Riddle Six</strong> <br />An eye in a blue face<br />Saw an eye in a green face.<br />"That eye is like to this eye"<br />Said the first eye,<br /> "But in low place,<br />Not in high place."<br /><a id="hobbit_answer_six" class="btn modal_answer btn-sm" href="#">Hobbit Answer Six</a></p>
+                  <p><strong>Gollum Riddle Seven</strong> <br />Alive without breath,<br />As cold as death;<br />Never thirsty, ever drinking,<br />All in mail never clinking.<br /><a id="hobbit_answer_seven" class="btn modal_answer btn-sm" href="#">Hobbit Answer Seven</a></p>
+                  <p><strong>Bilbo Riddle Eight</strong> <br />No-legs lay on one-leg,<br />two-legs sat near on three-legs,<br />four-legs got some.<br /><a id="hobbit_answer_eight" class="btn modal_answer btn-sm" href="#">Hobbit Answer eight</a></p>
+                  <p><strong>Gollum Riddle Nine</strong><br />This thing all things devours:<br />Birds, beasts, trees, flowers;<br />Gnaws iron, bites steel;<br />Grinds hard stones to meal;<br />Slays king, ruins town,<br />And beats high mountain down.<br /><a id="hobbit_answer_nine" class="btn modal_answer btn-sm" href="#">Hobbit Answer Nine</a></p>
                </div>
             </div>
       </div>
-      <div id='hidden-buttons' class='d-none container-fluid px-5'>
+      <div id="hidden-buttons" class="d-none container-fluid px-5">
          <h3>buttons</h3>
-         <a class='btn' href='#'><strong class='fas fa-angle-double-down'></strong> down</a>
-         <a class='btn' href='#'><strong class='fas fa-angle-double-up'></strong> up</a></p> 
+         <a class="btn" href="#"><strong class="fas fa-angle-double-down"></strong> down</a>
+         <a class="btn" href="#"><strong class="fas fa-angle-double-up"></strong> up</a></p> 
       </div>
-      <div class="modal fade" id="riddle_answer_modal">
+      <div id="modal_anchor_id"></div>
+      <div class="modal fade" id="answer_modal_element">
          <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
            <div class="modal-content">
              <!-- Modal Header -->
              <div class="modal-header">
-               <h3 id="riddle_answer_modal_title" class="riddle_answer_modal_title">Riddle Answer</h3>
-               <button id='x_close' type="button" class="close_modal" data-dismiss="modal">&times;</button>
+               <h3 id="answer_modal_element_title" class="answer_modal_element_title">Riddle Answer</h3>
+               <button id="x_close" type="button" class="close_modal" data-dismiss="modal">&times;</button>
              </div>
              <!-- Modal body -->
-             <div id="riddle_answer_modal_text" class="modal-body">
+             <div id="answer_modal_element_text" class="modal-body">
              </div>
              <!-- Modal footer -->
              <div class="modal-footer">
-               <button id='word_close' type="button" class="btn close_modal" data-dismiss="modal">Close</button>
+               <button id="word_close" type="button" class="btn close_modal" data-dismiss="modal">Close</button>
              </div>
            </div>
          </div>
