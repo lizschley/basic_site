@@ -80,10 +80,6 @@ a.link-text {
   text-decoration: underline;
 }
 
-body a.modal_popup_link {
-  color: #800020;
-}
-
 code {
   --bs-code-color: #7D6608;
 
