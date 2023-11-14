@@ -6,11 +6,6 @@ body {
     color: #006600;
 }
 
-body #riddle_answer_modal {
-  background-color: #FEF9E7;
-  color: #006600;
-}
-
 body #header {
     margin-top: 38px;
     padding: 15px;
@@ -78,10 +73,6 @@ span.text-toggle {
 a.link-text {
   color: #102e90 ,var(--bs-link-opacity,1);
   text-decoration: underline;
-}
-
-body a.modal_popup_link {
-  color: #800020;
 }
 
 code {
