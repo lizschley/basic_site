@@ -6,11 +6,6 @@ body {
     color: #006600;
 }
 
-body #answer_modal_element {
-  background-color: #FEF9E7;
-  color: #006600;
-}
-
 body #header {
     margin-top: 38px;
     padding: 15px;

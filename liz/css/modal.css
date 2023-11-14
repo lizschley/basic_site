@@ -7,3 +7,8 @@
 body a.modal_popup_link {
     color: #800020;
 }
+
+body #answer_modal_element {
+    background-color: #FEF9E7;
+    color: #006600;
+}
