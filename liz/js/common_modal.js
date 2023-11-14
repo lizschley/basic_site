@@ -44,7 +44,11 @@ function allow_close_modal(modal) {
 }
 
 function location_key() {
-  var path_array = window.location.pathname.split('/');
+  var pathname = window.location.pathname;
+  if (pathname == '/') {
+    return 'index'
+  }
+  var path_array = pathname.split('/');
   var temp = path_array.slice(-1).toString();
   var temp_array = temp.split('.');
   return temp_array[0].toString();
