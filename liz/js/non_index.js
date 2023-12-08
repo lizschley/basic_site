@@ -16,15 +16,16 @@ function navbar_html() {
              <a id='nav_dropdown' class='dropdown-toggle liz-colors' href='#' data-bs-toggle='dropdown' aria-expanded='false'>Q and A</a>
              <ul class='dropdown-menu'>
                 <li class='list-item'><a class='dropdown-item ' href='tech_q_a.html'>Technical</a></li>
-                <li class='list-item'><a class='dropdown-item' href='plants_q_a.html'>Insect Habitat Facilitation</a></li>
+                <li class='list-item'><a class='dropdown-item' href='to_do.html'>Insect Habitat Facilitation</a></li>
              </ul>
           </li>
-          <li class='nav-item'>
-             <a class='nav-link' href='how_to.html'>How To</a>
-          </li>
-          <li class='nav-item'>
-             <a class='nav-link' href='resume.html'>Resume</a>
-          </li>
+          <li class="nav-item dropdown">
+            <a id="nav_dropdown" class="dropdown-toggle liz-colors" href="#" data-bs-toggle="dropdown" aria-expanded="false">How-To</a>
+            <ul class="dropdown-menu">
+               <li class="list-item"><a class="dropdown-item " href="google_sheets_filtering.html">Technical</a></li>
+               <li class="list-item"><a class="dropdown-item" href="to_do.html">AWS Implementation Story</a></li>
+            </ul>
+         </li>
        </ul>
     </div>
    </div>`
