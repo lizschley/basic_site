@@ -1,13 +1,14 @@
-window.onload = (event) => {
+
+window.addEventListener('load', (event) => {
   document.getElementById('modal_anchor_id').innerHTML = modal_html();
-};
+ }, false);
 
 const answers = document.querySelectorAll(".modal_link_class");
 const close_buttons = document.querySelectorAll(".close_modal");
 const loc_key = location_key();
 
 answers.forEach(function(element) {
-    //alert('adding listener for id=' + element.getAttribute('id'))
+    //console.log('adding listener for id=' + element.getAttribute('id'));
     element.addEventListener('click', find_id_for_modal);
   });
 
@@ -28,8 +29,10 @@ function page_specific_data(link_id) {
   switch(loc_key) {
     case "index":
       return riddle_modal(link_id);
+    case "google_sheets_filtering":
+      return image_modal(link_id);  
     default:
-      console.log('There are no modal answers for this location key: ' + location_key + ' or it could be the link_id: ' + link_id);
+      console.log('We are not getting text and title for this location key: ' + location_key + ' or it could be the link_id: ' + link_id);
   }  
 }
 
@@ -56,7 +59,7 @@ function location_key() {
 
 function modal_html() {
   return ` <div class="modal fade" id="generic_modal_element">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div id="modal_dialog_id" class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <!-- Modal Header -->
         <div class="modal-header">
