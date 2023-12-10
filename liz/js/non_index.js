@@ -22,7 +22,7 @@ function navbar_html() {
           <li class="nav-item dropdown">
             <a id="nav_dropdown" class="dropdown-toggle liz-colors" href="#" data-bs-toggle="dropdown" aria-expanded="false">How-To</a>
             <ul class="dropdown-menu">
-               <li class="list-item"><a class="dropdown-item " href="google_sheets_filtering.html">Technical</a></li>
+               <li class="list-item"><a class="dropdown-item " href="google_sheets_filtering.html">Google Sheets Filtering</a></li>
                <li class="list-item"><a class="dropdown-item" href="to_do.html">AWS Implementation Story</a></li>
             </ul>
          </li>

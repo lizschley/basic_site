@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang='en'>
+   <head>
+      <meta charset='utf-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel='shortcut icon' href='images/logo.png' type='image/png'>
+      <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN' crossorigin='anonymous'>
+      <link href='css/navbar.css' id='navbar_css' media='screen' rel='stylesheet'/>
+      <link href='css/site.css' id='site_css' media='screen' rel='stylesheet'/>
+      <script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js' type='text/javascript' defer integrity='sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r' crossorigin='anonymous'></script>
+      <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js' type='text/javascript' defer integrity='sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+' crossorigin='anonymous'></script>
+      <script src="js/common_modal.js" defer type="text/javascript"></script>
+      <script src="js/image_modals.js" defer type="text/javascript"></script>
+      <script src='js/site.js' type='text/javascript' defer></script> 
+      <script src='js/non_index.js' type='text/javascript' defer></script> 
+      <title>Inquiries and Observations | Inquiries and Observations </title>
+   </head>
+   <body>
+      <!-- Navbar -->
+      <nav id='non_index_nav_id' class='navbar navbar-expand-sm fixed-top' aria-label='navbar'>
+      </nav>
+      <div id='header' class='clearfix' class='container-fluid'>
+        <a href='#main-wrapper' title='Home' rel='home' class='navbar-brand'>
+          <img src='images/logo.png' class='img-fluid float-start' alt='cat logo, link to home'>
+        </a>
+        <div class='header_words google_sheets_filtering'>
+         <h1>Google Sheets Filtering Story</h1>
+        </div>
+     </div>
+     <div id='sheets_filter' class='container-fluid px-5'>
+        <h4 id='sheets_filter_purpose'>Situation</h4>
+        <p>Back during Covid Lockdown (mostly 2020) I created a Django Site that stored most of the content in a Postgres database and deployed it dynamically on AWS. When my free year was up, it got too expensive and I was happily working for money, so I undeployed my site. My application still works in development.  I am in the process of deploying some of my content to this site, which is super cheap.</p>
+        <p>The data is stored in five tables, with the main one being a paragraphs table. One paragraph can have many groups and also many references. These both many-to-many relationships, so that references and groups can each have many paragraphs. I dumped the table data into csv files, each one representing a table.  My goal is get all the paragraphs for a given group and then all the references for a given paragraph. I am doing this in Google Sheets, where one tab represents on table.</p>
+        <p>Note - I could have done this using a postgres data dump, but since I rarely will have time to work on it, given my site takes a back seat to my job and my much of my personal life, I thought this approach would be easier to manage.</p>
+        <h4 id='to_do_filler_id'>Final Result</h4>
+        <p>Here is a <a id="google_sheet_image_id" class="reference_link" href="#" target="_blank">worksheet example</a> to refer to.</p>
+        <p>Note - the steps are top (first three) to bottom (final result) and from left to right.</p>
+        <h5>Step One (orange)</h5>
+        <h5>Step Two (purple)</h5>
+        <h5>Step Three (green) </h5>
+        <h5>Step Four (blue)</h5>
+     </div>
+     <div id="modal_anchor_id"></div>
+   </body>
+</html>
+     
