@@ -30,17 +30,68 @@
      <div id='sheets_filter' class='container-fluid px-5'>
         <h4 id='sheets_filter_purpose'>Situation</h4>
         <p>Back during Covid Lockdown (mostly 2020) I created a Django Site that stored most of the content in a Postgres database and deployed it dynamically on AWS. When my free year was up, it got too expensive and I was happily working for money, so I undeployed my site. My application still works in development.  I am in the process of deploying some of my content to this site, which is super cheap.</p>
-        <p>The data is stored in five tables, with the main one being a paragraphs table. One paragraph can have many groups and also many references. These both many-to-many relationships, so that references and groups can each have many paragraphs. I dumped the table data into csv files, each one representing a table.  My goal is get all the paragraphs for a given group and then all the references for a given paragraph. I am doing this in Google Sheets, where one tab represents on table.</p>
-        <p>Note - I could have done this using a postgres data dump, but since I rarely will have time to work on it, given my site takes a back seat to my job and my much of my personal life, I thought this approach would be easier to manage.</p>
+        <ul>
+         <li>My goal was get all the paragraphs for a given group and then all the references for a given paragraph. I am doing this in Google Sheets, where one tab represents on table.</li>
+         <li>It helps that the paragraph records in my database already have html coding.</li>
+         <li>The data was stored in five tables, with the main one being a paragraphs table.</li>
+         <li>Each paragraph can have many groups and also many references. These are both many-to-many relationships, so that references and groups can each have many paragraphs.</li>
+         <li>Since the table relations are many-to-many and the csv data is flat, the filtering formulas are more complex.</li>
+        </ul>
+        <p>Note - This probably should have been done using a postgres data dump and load into a new database, but CSV files seemed easier, though likely will waste time in the long run.</p>
+        <p>At least I'll learn about google sheets filtering formulas!</p>
         <h4 id='sheets_filter_action'>Action</h4>
-        <p>Here is a <a id="google_sheet_image" class="modal_link_class" href="#">worksheet example</a> to refer to.</p>
-        <p>Note - the steps are top (first three) to bottom (final result) and from left to right.</p>
-        <h5>Step One (orange)</h5>
-        <h5>Step Two (purple)</h5>
-        <h5>Step Three (green) </h5>
-        <h5>Step Four (blue)</h5>
-        <h4 id='sheets_filter_action'>Result</h4>
-        <p>link to site</p>
+        <p>Here is a <a id="google_sheet_image" class="modal_link_class" href="#">worksheet example</a> to refer to. To return, click the <strong>X</strong> box at the top right of the modal, or <strong>Close</strong> at the bottom right.</p>
+        <p>The example tab [sheet] is named <em>paragraphs for group</em></p>
+        <p>Note - the steps are top (first three) to bottom (final formula) and from left to right. May need to scroll down a bit.</p>
+        <h5>Original Setup</h5>
+        <ul>
+         <li>In the example we will be working on a worksheet on the <em>paragraphs for group</em> tab</li>
+         <li>In the planning stage, paste the expected column headings.
+         <li>For example, start with the following headings
+         <ul>
+            <li>Group Id at A1</li>
+            <li>Number of Paragraphs at B1</li>
+            <li>Two columns: group_id at F1 and paragraph_id at G1</li>
+         </ul></li>        
+        </ul>
+        <h5>Step One (orange) - Find the group_id you want.</h5>
+        <ul>
+         <li>This is a manual step and not transparent.
+         <ul>
+            <li>Keep in mind: one group has one-to-many paragraphs, sometimes ordered and sometimes not.</li>
+            <li>Go to the group tab with many rows and columns, then sort by group_id and then group_sort, thus keeping the ordered paragraphs in order within the parent group.</li>
+            <li>By looking at the row data, find the type of paragraph you want. The group id on that row will be the one you want.</li>          
+         </ul></li>
+         <li>Copy the group_id value that is associated with the paragraph(s) you want to find.</li>
+         <li>Paste the group_id in the <i>paragraphs for group</i> tab in field A2.</li>
+        </ul>
+        <h5>Step Two (purple) - Count the paragraphs in the selected group.</h5>
+        <ul>
+         <li>Underneath the heading in B1 (heading is <em>Count Group ID</em> should be <em>Number of Paragraphs</em>) </li>
+         <li>In B2, type the formula <span id="count-formula" class="code">=COUNTif(groups_paragraph!E2:E712,A2)</span></li>
+         <li>The number of paragraphs that are children of the given group_id will then be in B2.
+         <ul>
+            <li>Counting promotes reuse by ensuring the list of list of paragraphs does not overwrite the actual paragraph data.</li>
+            <li>Now it does not matter, but if you are doing it again, you may need to add rows above the paragraph date, based on the paragraph count.</li>
+         </ul></li>
+        </ul> 
+        <h5>Step Three (green) - get the paragraph_ids for the hard-coded group id in A2</h5>
+        <ul>
+         <li>The column headings are group_id (F1) and the associated paragraph id (G1)</li>
+         <li>Start at the row under the column heading, <em>Group Id</em></li>
+         <li>In F2, type the formula <span id="list_paragraphs" class="code">=Filter(groups_paragraph!E2:F780,groups_paragraph!E2:E780=A2)</span></li>
+         <li>The group_ids (all 2s) and the paragraphs_ids will be listed under their respective headings</li>
+         <li>The paragraph_id field locations G2 through G5 will be in the next formula that actually retrieves the paragraphs</li>
+        </ul>
+        <h5>Step Four (blue) - get the complete paragraph row for each paragraph id in the G columns (G2 through G5 in the example)</h5>
+        <ul>
+         <li>The paragraph tab has all the paragraph headings, they need to be cut and pasted below the end of the list of paragraph ids.</li>
+         <li>In the example, I pasted the paragraph headers in A10 through L10</li>
+         <li>In A11, type the formula <span id="retrieve-paras" class="code">=Filter(paragraphs!A2:L678, (paragraphs!A2:A678=G2) + (paragraphs!A2:A678=G3)+ (paragraphs!A2:A678=G4) + (paragraphs!A2:A678=G5))</span></li></li>
+         <li>The results appeared in A11 through L14 (see the worksheet link above)</li>
+        </ul>
+        <h4 id='sheets_filter_action'>Results</h4>
+        <p>Here a <a class='link_text' href='tech_q_a.html'>usage example</a> from this site.</p>
      </div>
      <div id="modal_anchor_id"></div>
    </body>
