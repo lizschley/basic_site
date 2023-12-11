@@ -1,22 +1,23 @@
-window.onload = (event) => {
-  document.getElementById('modal_anchor_id').innerHTML = modal_html();
-};
 
-const answers = document.querySelectorAll(".modal_answer");
+window.addEventListener('load', (event) => {
+  document.getElementById('modal_anchor_id').innerHTML = modal_html();
+ }, false);
+
+const answers = document.querySelectorAll(".modal_link_class");
 const close_buttons = document.querySelectorAll(".close_modal");
 const loc_key = location_key();
 
 answers.forEach(function(element) {
-    //alert('adding listener for id=' + element.getAttribute('id'))
+    //console.log('adding listener for id=' + element.getAttribute('id'));
     element.addEventListener('click', find_id_for_modal);
   });
 
 function find_id_for_modal() {
   const link_id = this.getAttribute("id");
-  const modalElement = document.getElementById('answer_modal_element');
+  const modalElement = document.getElementById('generic_modal_element');
   const modal = new bootstrap.Modal(modalElement);
-  const modal_body = document.getElementById('answer_modal_element_text');
-  const modal_title = document.getElementById('answer_modal_element_title');
+  const modal_body = document.getElementById('modal_element_text');
+  const modal_title = document.getElementById('modal_element_title');
   const modal_data = page_specific_data(link_id);
   modal_body.innerHTML = modal_data.text;
   modal_title.innerHTML = modal_data.title;
@@ -28,8 +29,10 @@ function page_specific_data(link_id) {
   switch(loc_key) {
     case "index":
       return riddle_modal(link_id);
+    case "google_sheets_filtering":
+      return misc_modal(link_id);  
     default:
-      console.log('There are no modal answers for this location key: ' + location_key + ' or it could be the link_id: ' + link_id);
+      console.log('We are not getting text and title for this location key: ' + location_key + ' or it could be the link_id: ' + link_id);
   }  
 }
 
@@ -55,16 +58,16 @@ function location_key() {
 }
 
 function modal_html() {
-  return ` <div class="modal fade" id="answer_modal_element">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+  return ` <div class="modal fade" id="generic_modal_element">
+    <div id="modal_dialog_id" class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <!-- Modal Header -->
         <div class="modal-header">
-          <h3 id="answer_modal_element_title" class="answer_modal_element_title">Riddle Answer</h3>
+          <h3 id="modal_element_title" class="modal_element_title">Modal Title</h3>
           <button id="x_close" type="button" class="close_modal" data-dismiss="modal">&times;</button>
         </div>
         <!-- Modal body -->
-        <div id="answer_modal_element_text" class="modal-body">
+        <div id="modal_element_text" class="modal-body">
         </div>
         <!-- Modal footer -->
         <div class="modal-footer">
