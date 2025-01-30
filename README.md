@@ -1,4 +1,5 @@
 # Inquiries and Observation - In Progress
+
 ## A basic website
 
 This site is hosted on HostGator and uses the following technologoies: bootstrap 5.3.2: html, css and javascript.
