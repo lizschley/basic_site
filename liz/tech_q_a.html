@@ -10,8 +10,8 @@
       <link href='css/accordian.css' id='site_css' media='screen' rel='stylesheet'/>
       <script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js' integrity='sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r' defer crossorigin='anonymous'></script>
       <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js' integrity='sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+' defer crossorigin='anonymous'></script>
-      <script src='js/site.js'  type='text/javascript' defer></script> 
-      <script src='js/non_index.js' type='text/javascript' defer></script> 
+      <script src='js/site.js'  type='text/javascript' defer></script>
+      <script src='js/non_index_new.js' type='text/javascript' defer></script>
       <title>Inquiries and Observations | Inquiries and Observations </title>
    </head>
    <body>
@@ -98,7 +98,7 @@
               <div class="accordion-body">
                 <p>To kill the process with pid==40676, you do this:</p>
                 <pre>&gt;&gt; kill -9 40676</pre>
-                But if you know the port of a process, are not sure of the name and definitely don't know the id, then here's what to do: 
+                But if you know the port of a process, are not sure of the name and definitely don't know the id, then here's what to do:
                 <pre>&gt;&gt; lsof -i :8000</pre>
                 <p>Where lsof means list of open files.  The following is directly quoted from ss44: "An open file can be a regular file, a directory, a block special file, a character, special file, an executing text reference, a library, a stream or a network file (Internet socket, NFS file or UNIX domain socket.)"</p>
                 <p>The -i is a way of specifying an internet address.  The colon says service or port.</p>
