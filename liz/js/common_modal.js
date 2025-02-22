@@ -21,19 +21,21 @@ function find_id_for_modal() {
   const modal_data = page_specific_data(link_id);
   modal_body.innerHTML = modal_data.text;
   modal_title.innerHTML = modal_data.title;
-  modal.show(); 
+  modal.show();
   allow_close_modal(modal);
-}  
+}
 
 function page_specific_data(link_id) {
   switch(loc_key) {
     case "index":
       return riddle_modal(link_id);
     case "google_sheets_filtering":
-      return misc_modal(link_id);  
+      return misc_modal(link_id);
+    case "community":
+        return community_modal(link_id);
     default:
       console.log('We are not getting text and title for this location key: ' + location_key + ' or it could be the link_id: ' + link_id);
-  }  
+  }
 }
 
 function allow_close_modal(modal) {
@@ -42,7 +44,7 @@ function allow_close_modal(modal) {
   for (var idx = 0; idx < len; idx++) {
     document.querySelector(close_ids[idx]).addEventListener('click', function() {
       modal.hide();
-    });      
+    });
   }
 }
 

@@ -8,6 +8,7 @@
       <link href='css/navbar.css' id='navbar_css' media='screen' rel='stylesheet'/>
       <link href='css/site.css' id='site_css' media='screen' rel='stylesheet'/>
       <link href='https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css' rel='stylesheet'/>
+      <link href='css/modal.css' id='modal_css' rel='stylesheet'/>
       <script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js' type='text/javascript' defer integrity='sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r' crossorigin='anonymous'></script>
       <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js' type='text/javascript' defer integrity='sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+' crossorigin='anonymous'></script>
       <script src='js/site.js' type='text/javascript' defer></script>
@@ -15,6 +16,9 @@
       <script src="https://code.jquery.com/jquery-3.6.0.min.js" type='text/javascript' defer></script>
       <script src='https://cdn.datatables.net/2.2.2/js/dataTables.js' type='text/javascript' defer></script>
       <script src='js/plant_table.js' type='text/javascript' defer></script>
+      <script src="js/common_modal.js" defer type="text/javascript"></script>
+      <script src="data/community_plant_answer.js" defer type="text/javascript"></script>
+      <script src="data/community_plant_paras.js" defer type="text/javascript"></script>
       <title>Inquiries and Observations | Inquiries and Observations </title>
    </head>
    <body>
@@ -52,17 +56,17 @@
             </thead>
             <tbody class='stripe hover order-column row-border'>
                 <tr>
-                    <td><a href='https://plants.usda.gov/plant-profile/CHVI5' target="_blank">Chrysogonum virginianum</a></td>
+                    <td><a id="Chrysogonum-virginianum" class="modal_popup_link modal_link_class" href="#">Chrysogonum virginianum</a></td>
                     <td>green and gold</td>
                     <td>flowering forb</td>
                 </tr>
                 <tr>
-                    <td><a href='https://plants.usda.gov/plant-profile/KALA' target="_blank">Kalmia latifolia L.</a></td>
+                    <td><a id="Kalmia-latifolia" class="modal_popup_link modal_link_class" href='#'>Kalmia latifolia</a></td>
                     <td>mountain laurel</td>
                     <td>shrub</td>
                 </tr>
                 <tr>
-                    <td><a href=href='https://plants.usda.gov/plant-profile/ROCA4' target="_blank"> Rosa carolina</a></td>
+                    <td><a id="Rosa-carolina" class="modal_popup_link modal_link_class" href='#'>Rosa carolina</a></td>
                     <td>carolina rose</td>
                     <td>shrub</td>
                 </tr>
@@ -75,7 +79,7 @@
                 </tr>
             </tfoot>
         </table>
-
      </div>
+     <div id="modal_anchor_id"></div>
    </body>
 </html>
