@@ -1,4 +1,5 @@
 function community_modal(link_id) {
+    // replace with python generated code
     switch(link_id) {
         case "Chrysogonum-virginianum":
           text = chrysogonum_virginianum()
