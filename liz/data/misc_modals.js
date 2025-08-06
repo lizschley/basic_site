@@ -15,7 +15,7 @@ function misc_modal(link_id) {
       default:
         text = "Have never heard of that fruit...";
         title = "Programming Oversight."
-    }    
+    }
  return {
     text: text,
     title: title
