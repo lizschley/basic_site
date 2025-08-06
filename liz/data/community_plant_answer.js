@@ -1,5 +1,5 @@
 function community_modal(link_id) {
-    // replace with python generated code
+    let text = get_code(link_id)
     switch(link_id) {
         case "Chrysogonum-virginianum":
           text = chrysogonum_virginianum()
@@ -22,3 +22,9 @@ function community_modal(link_id) {
       title: title
     };
   };
+
+  function get_code(link_id) {
+    // https://www.geeksforgeeks.org/javascript/how-to-read-a-local-text-file-using-javascript/
+    //liz/data/community_html_text/ + link_id + html
+    return ''
+  }
