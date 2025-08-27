@@ -28,3 +28,4 @@ function community_modal(link_id) {
     //liz/data/community_html_text/ + link_id + html
     return ''
   }
+  
