@@ -15,24 +15,24 @@ function navbar_html() {
           <li class='nav-item dropdown'>
              <a id='nav_dropdown' class='dropdown-toggle liz-colors' href='#' data-bs-toggle='dropdown' aria-expanded='false'>Insect Habitat</a>
              <ul class='dropdown-menu'>
-                <li class='list-item'><a class='dropdown-item' href='html/insect_habitat/plant_overview.html'>Overview of Plant Project</a></li>
-                <li class='list-item'><a class='dropdown-item ' href='html/insect_habitat/community.html'>Home Plant Communities</a></li>
-                <li class='list-item'><a class='dropdown-item' href='html/insect_habitat/va_native.html'>Virginia Natives</a></li>
-                <li class='list-item'><a class='dropdown-item ' href='html/insect_habitat/native_east_us.html'>East US Natives</a></li>
-                <li class='list-item'><a class='dropdown-item' href='html/insect_habitat/non_native.html'>Non Natives</a></li>
+                <li class='list-item'><a class='dropdown-item' href='../../html/insect_habitat/plant_overview.html'>Overview of Plant Project</a></li>
+                <li class='list-item'><a class='dropdown-item ' href='../../html/insect_habitat/community.html'>Home Plant Communities</a></li>
+                <li class='list-item'><a class='dropdown-item' href='../../html/insect_habitat/va_native.html'>Virginia Natives</a></li>
+                <li class='list-item'><a class='dropdown-item ' href='../../html/insect_habitat/native_east_us.html'>East US Natives</a></li>
+                <li class='list-item'><a class='dropdown-item' href='../../html/insect_habitat/non_native.html'>Non Natives</a></li>
              </ul>
           </li>
           <li class='nav-item dropdown'>
              <a id='nav_dropdown' class='dropdown-toggle liz-colors' href='#' data-bs-toggle='dropdown' aria-expanded='false'>Blog</a>
              <ul class='dropdown-menu'>
-                <li class='list-item'><a class='dropdown-item' href='html/blog/first_blog.html'>Initial</a></li>
+                <li class='list-item'><a class='dropdown-item' href='../../html/blog/first_blog.html'>Initial</a></li>
              </ul>
           </li>
           <li class='nav-item dropdown'>
              <a id='nav_dropdown' class='dropdown-toggle liz-colors' href='#' data-bs-toggle='dropdown' aria-expanded='false'>Misc Info</a>
              <ul class='dropdown-menu'>
-                <li class='list-item'><a class='dropdown-item ' href='html/misc/tech_q_a.html'>Technical from 2020</a></li>
-                <li class='list-item'><a class='dropdown-item' href='html/misc/google_sheets_filtering.html'>Google Sheets Filtering</a></li>
+                <li class='list-item'><a class='dropdown-item ' href='../../html/misc/tech_q_a.html'>Technical from 2020</a></li>
+                <li class='list-item'><a class='dropdown-item' href='../../html/misc/google_sheets_filtering.html'>Google Sheets Filtering</a></li>
              </ul>
           </li>
        </ul>
