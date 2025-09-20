@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang='en'>
+   <head>
+      <meta charset='utf-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel='shortcut icon' href='images/logo.png' type='image/png'>
+      <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN' crossorigin='anonymous'>
+      <link href='../../css/navbar.css' id='navbar_css' media='screen' rel='stylesheet'/>
+      <link href='../../css/site.css' id='site_css' media='screen' rel='stylesheet'/>
+      <link href="../../css/accordian.css" id="site_css" media="screen" rel="stylesheet"/>
+      <script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js' type='text/javascript' defer integrity='sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r' crossorigin='anonymous'></script>
+      <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js' type='text/javascript' defer integrity='sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+' crossorigin='anonymous'></script>
+      <script src='../../js/non_index.js' type='text/javascript' defer></script>
+    <title>Inquiries and Observations | Inquiries and Observations </title>
+</head>
+<body id='philosophical_gleanings_page_id'>
+    <!-- Navbar -->
+    <nav id='non_index_nav_id' class='navbar navbar-expand-sm fixed-top' aria-label='navbar'>
+    </nav>
+    <div id='header' class='clearfix' class='container-fluid'>
+        <a href='../../../index.html' title='Home' rel='home' class='navbar-brand'>
+            <img src='../../images/logo.png' class='img-fluid float-start' alt='cat logo, link to home'>
+        </a>
+        <div class='header_words'>
+        <h1 id=blog_intro_overview_h1>Blog Introduction</h1>
+        </div>
+    </div>
+    <div id='blog_intro_main_container' class='container-fluid px-5'>
+        <h3 id='blog_intro_h3'>Blog Introduction and Reason</h3>
+        <p>Begin here</p>
+    </div><div id='tech_questions_and_answers' class='container-fluid px-5'>
+    <h6>The following answers were accurate in late 2020:</h6>
+    <div class="accordion" id="tech-q-and-a-id">
+        <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            How do you add a Subdomain to a Letsencrypt Certificate?
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#tech-q-and-a-id">
+            <div class="accordion-body">
+            <p>
+                When I accepted that in the real world you need to have a www subdomain, I was able to add it through AWS. I did not document that process, because AWS did a good job of explaining and it seemed to work perfectly. However, I later found out that it gave a security error in Safari. It said that my valid site may be spoofed. Therefore, I needed to add a www subdomain to my certificate.
+            </p>
+            <p>Ran this from <a href="https://technologytales.com/2019/06/11/adding-a-new-domain-or-subdomain-to-an-ssl-certificate-using-certbot/" class="reference_link" target="_blank">Technologytales 20190611</a>: </p>
+            <pre><code>&gt;&gt;&gt;sudo certbot --expand -d existing.com,www.example.com</code></pre>
+            It worked, but it broke the automatic redirect from www.domain.com to domain.com that worked before.  This is obviously an Apache problem, since www.domain.com brought up the default Apache page that lives on the server.
+            <p></p>
+            <p>This error was fixed by using advice from <a href="https://linuxize.com/post/redirect-http-to-https-in-apache/" class="reference_link" target="_blank">Linuxize 20200101</a>. I had to add their suggested code to two files (example.conf and example-le-ssl.conf). </p>
+            <p>Everything works, which is great, but someday, I would like to look at what I have with someone who understands Apache best practices.  Plus, I should test the fix again after the cron job renews the certificate.</p>
+            <h5>References</h5>
+            <a href="https://technologytales.com/2019/06/11/adding-a-new-domain-or-subdomain-to-an-ssl-certificate-using-certbot/" class="reference_link" target="_blank">Technologytales_20190611_AddingNewDomainSubdomain_SSL_Certificate_Certbot</a><br><a href="https://linuxize.com/post/redirect-http-to-https-in-apache/" class="reference_link" target="_blank">Linuxize_20200101_RedirectHttpHttpsApache</a><br>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>    </body>
+</html>
