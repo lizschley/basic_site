@@ -22,37 +22,89 @@
             <img src='../../images/logo.png' class='img-fluid float-start' alt='cat logo, link to home'>
         </a>
         <div class='header_words'>
-        <h1 id=blog_intro_overview_h1>Blog Introduction</h1>
+        <h1 id=phil_gleanings_overview_h1>Dr Brenner's Philosophical Gleanings</h1>
         </div>
     </div>
-    <div id='blog_intro_main_container' class='container-fluid px-5'>
-        <h3 id='blog_intro_h3'>Blog Introduction and Reason</h3>
-        <p>Begin here</p>
-    </div><div id='tech_questions_and_answers' class='container-fluid px-5'>
-    <h6>The following answers were accurate in late 2020:</h6>
-    <div class="accordion" id="tech-q-and-a-id">
+    <div id='phil_gleanings_main_container' class='container-fluid px-5'>
+        <h3 id='phil_gleanings_h3'>Philosophical Gleanings</h3>
+        <p>Compiled by Dr William H Brenner with references indicated informally</p>
+        <h5>Ethics I</h5>
+        <div class="accordion" id="philosophical_gleanings">
         <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            How do you add a Subdomain to a Letsencrypt Certificate?
-            </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#tech-q-and-a-id">
-            <div class="accordion-body">
-            <p>
-                When I accepted that in the real world you need to have a www subdomain, I was able to add it through AWS. I did not document that process, because AWS did a good job of explaining and it seemed to work perfectly. However, I later found out that it gave a security error in Safari. It said that my valid site may be spoofed. Therefore, I needed to add a www subdomain to my certificate.
-            </p>
-            <p>Ran this from <a href="https://technologytales.com/2019/06/11/adding-a-new-domain-or-subdomain-to-an-ssl-certificate-using-certbot/" class="reference_link" target="_blank">Technologytales 20190611</a>: </p>
-            <pre><code>&gt;&gt;&gt;sudo certbot --expand -d existing.com,www.example.com</code></pre>
-            It worked, but it broke the automatic redirect from www.domain.com to domain.com that worked before.  This is obviously an Apache problem, since www.domain.com brought up the default Apache page that lives on the server.
-            <p></p>
-            <p>This error was fixed by using advice from <a href="https://linuxize.com/post/redirect-http-to-https-in-apache/" class="reference_link" target="_blank">Linuxize 20200101</a>. I had to add their suggested code to two files (example.conf and example-le-ssl.conf). </p>
-            <p>Everything works, which is great, but someday, I would like to look at what I have with someone who understands Apache best practices.  Plus, I should test the fix again after the cron job renews the certificate.</p>
-            <h5>References</h5>
-            <a href="https://technologytales.com/2019/06/11/adding-a-new-domain-or-subdomain-to-an-ssl-certificate-using-certbot/" class="reference_link" target="_blank">Technologytales_20190611_AddingNewDomainSubdomain_SSL_Certificate_Certbot</a><br><a href="https://linuxize.com/post/redirect-http-to-https-in-apache/" class="reference_link" target="_blank">Linuxize_20200101_RedirectHttpHttpsApache</a><br>
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse">
+                Wonder at the Existence of the World
+                </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#philosophical_gleanings">
+                <div class="accordion-body">
+                    <p>
+                        “The world is there”: what men mean by that lies close to my heart. –W, WVC p. 118/ In “Lecture on Ethics,” W. spoke of wonder at the existence of the world as his “experience par excellence.” In this, I think, he was expressing an attitude towards the world much like what, in “Ethics of Elfland,” Chesterton called  “elementary wonder.” (Cf. Brenner, “Chesterton, W. & the Foundations of Ethics.”) –w.h.b.
+                    </p><p>
+                        Dialogue: S:“Why is there a world? –  R: There just is! – S: Because God chose to create it!/ Comment: S’s answer amplifies mystery; R’s dismisses it./ In “Science and the Savages,” Chesterton remarks that, rather than making the world less mysterious, and so something to no longer wonder at, primitive personification of nature is an expression, and amplification of wonder. –w.h.b. & sjw
+                    </p><p>
+                        This wonder finds a strikingly expression in the following from the first chapter of Bernard Malamud’s novel, A New Life:
+                        <blockquote class="phil_gleanings"> two years I lived in self hatred, willing to part with life… But one morning, in somebody’s filthy cellar, I awoke under burlap bags and saw my rotting shoes on a broken chair. They were lit in dim sunlight from a shaft or window. I stared at the chair; it looked like a painting, a thing with a value of its own. I squeezed what was left of my brain to understand why this should move me so deeply, why I was crying. Then, I thought, Levin, if you were dead, there’d be no light on your shoes in the cellar. I came to believe what I had often wanted to, that life is holy. I then became a man of principle.
+                        Here “amazement that anything should exist” (wonder at the ordinary, ”believing that life is holy”) is connected with “becoming a man of principle”</blockquote> and so with the moral imperative. Cf.  Blake’s “holiness of the minute particular.” (Cf.: “Two things fill the mind with wonder and awe: the starry skies above me and the moral law within me.” Kant is connecting awe at the impersonal beauty we observe in the cosmic order with the respect we feel for the imperative enjoining to bring about another, personal, beauty in our lives. –w.h.b.)
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                Wonder at the Existence of Language
+                </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#philosophical_gleanings">
+                <div class="accordion-body">
+                    <p> [I] am tempted to say that the right expression in language for the miracle of the existence of the world, though it is not any proposition in language, is the existence of language itself. –W, LE  pp. 43-44 in PO
+                    </p><p>
+                        We learn and teach words in certain contexts, and then we are expected, and expect others, to be able to project them into further contexts. Nothing ensures that this projection will take place …That on the whole we do is a matter of our sharing…all the whirl of organism W. calls “forms of life.” –Cavell, “Availability …” p. 52
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  The Strangeness of the Ordinary
+                </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#philosophical_gleanings">
+                <div class="accordion-body">
+                    <p> In PI, the sense of wonder, the source of all philosophy, is diffused over the whole range of human life and consciousness./ The achievement of W's later philosophy is its demonstration of the strangeness of the ordinary. Such things are so close to us that we hardly notice them in daily life and it takes the philosopher's perception to pick them out and describe them. The method is a careful juxtaposition of familiar things but the result is a new understanding of them./ Philosophy, he thinks, is not like science because its task is not to theorize but only to describe. The understanding that philosophers seek can be caught…only by a description which makes us see the familiar phenomenon in the right way. [In this,] philosophy is like art./ The philosophy of the past modeled itself on science, and its theories became more and more remote from life as it is lived …The new philosophy comes back from the desert with a new message: describe the familiar in the right way, and you will understand it. –Pears, <em>False Prison</em>, vol. 1, pp. 17-19                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  The Awakening Human Spirit
+                </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#philosophical_gleanings">
+                <div class="accordion-body">
+                    <p>
+                        How could fire or fire's resemblance to the sun have failed to make an impression on the awakening mind of man?/ But not “because he can't explain it” (the stupid superstition of our time)…I do not mean that it is fire that must make an impression on anyone… For no phenomenon is particularly mysterious in itself, but any of them can become so to us, and it is precisely the characteristic feature of the awakening human spirit that a phenomenon has meaning for it. –W, PO p. 129
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  The Meaning of the World
+                </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#philosophical_gleanings">
+                <div class="accordion-body">
+                    <p>THE MEANING OF THE WORLD is not in the world (NB p. 73). Wonder has something to do with that. But the meaning of the world is not known. It’s more like an atmosphere, a spiritual fragrance, aroma of significance, a savor of the divine. Of course it isn't talk that occasions wonder. It’s the world itself – a flower, an amoeba,…So we describe the amoeba, its behavior, chemistry, etc. And when we’ve done all this, what remains? Wonder. You see what there is here. An amoeba. But that there should be such a thing! Wonder is inarticulate. It can’t even ask questions. Here we run up against what cannot be understood. When [my student] Evans treats this, it’s as though, if he only knew one more detail, he’d then be satisfied. But wonder is not satisfied with another detail…It is not a question. It might break out in fear or again in singing. The amoeba declares the glory of God and the mosquito his handiwork…But don’t ask how. The experience of wonder borders on the sublime. It calls for reverence. –Bouwsma, ‘62 Lecture Notes</p>
+                </div>
             </div>
         </div>
         </div>
     </div>
-</div>    </body>
+</div>
+</body>
 </html>
