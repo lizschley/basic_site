@@ -20,7 +20,7 @@ body .find_headers {
 
 .header_words {
   display:inline;
-}  
+}
 
 #header h1 {
     margin-left: 150px;
@@ -86,3 +86,4 @@ code {
 span.code {
   color: #7D6608;
 }
+

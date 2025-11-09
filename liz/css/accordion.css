@@ -1,9 +1,9 @@
-.accordion-button {
+button.accordion-button {
     --bs-accordion-btn-color: #006600;
     --bs-accordion-btn-bg: #f7f3db;
 }
 
-.accordion {
+div.accordion {
     --bs-accordion-color: #006600;
     --bs-accordion-bg: #FEF9E7;
     --bs-accordion-border-color: hsl(33, 81%, 25%);
@@ -11,7 +11,17 @@
     /* --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #f5da43; */
 }
 
-.accordion-button:not(.collapsed) {
+button.accordion-button:not(.collapsed) {
     --bs-accordion-active-color: hsl(33, 81%, 25%);
     --bs-accordion-active-bg: #FEF9E7;
+}
+
+
+blockquote.accordion_indent {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h5.accordion_h5 {
+    margin-top: 20px;
 }
