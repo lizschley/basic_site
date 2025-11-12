@@ -26,6 +26,7 @@ function navbar_html() {
              <a id='nav_dropdown' class='dropdown-toggle liz-colors' href='#' data-bs-toggle='dropdown' aria-expanded='false'>Blog</a>
              <ul class='dropdown-menu'>
                 <li class='list-item'><a class='dropdown-item' href='../../html/blog/blog_intro.html'>Initial</a></li>
+                <li class='list-item'><a class='dropdown-item ' href='liz/html/blog/hawaii_late_september.html'>O'ahu, Hawai'i</a></li>
              </ul>
           </li>
           <li class='nav-item dropdown'>

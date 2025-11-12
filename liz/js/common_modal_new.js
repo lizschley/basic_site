@@ -33,6 +33,8 @@ function page_specific_data(link_id) {
       return misc_modal(link_id);
     case "community":
         return community_modal(link_id);
+    case "hawaii":
+        return hawaii_modal(link_id)
     default:
       console.log('We are not getting text and title for this location key: ' + location_key + ' or it could be the link_id: ' + link_id);
   }
