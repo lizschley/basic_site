@@ -95,3 +95,9 @@ span.code {
   color: #7D6608;
 }
 
+mark {
+  background-color: #00FFFF;
+  color: black;
+}
+
+

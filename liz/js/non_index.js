@@ -28,6 +28,7 @@ function navbar_html() {
                 <li class='list-item'><a class='dropdown-item' href='../../html/blog/blog_intro.html'>Initial</a></li>
                 <li class='list-item'><a class='dropdown-item' href='../../html/blog/hawaii_late_sept_2025.html'>O'ahu, Hawai\'i</a></li>
                 <li class='list-item'><a class='dropdown-item' href='../../html/blog/intro_logic_philosophy.html'>Intro to Logic and Philosophy</a></li>
+                <li class='list-item'><a class='dropdown-item' href='../../html/blog/timeline_logic_philosophy.html'>Timeline for Logic and Philosophy</a></li>
              </ul>
           </li>
           <li class='nav-item dropdown'>
