@@ -2,10 +2,10 @@
 
 ## A basic website
 
-This site is hosted on HostGator and uses the following technologoies: bootstrap 5.3.2: html, css and javascript.
+This site is hosted on HostGator and uses the following technologies: bootstrap 5.3.2: html, css and javascript.
 
 [Inquiries and Observation](https://schley.tech)
 
-This has been reorganized now that I am retired and no longer need an online resume. It will be a personal inventory of the plants in my front and back yards.
+This has been reorganized now that I am retired and no longer need an online resume. It will be a personal inventory of the plants in my front and back yards (no longer true).
 
-Actually, however, I am leaving the purpose up in the air. I have all sorts of plans or fantasies that may or may not be implemented.
+I am leaving the purpose up in the air. I have all sorts of plans or fantasies that may or may not be implemented.
