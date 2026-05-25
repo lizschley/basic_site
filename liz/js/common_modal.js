@@ -14,6 +14,7 @@ answers.forEach(function(element) {
 
 function find_id_for_modal() {
   const link_id = this.getAttribute("id");
+  console.log('link_id == ' + link_id)
   const modalElement = document.getElementById('generic_modal_element');
   const modal = new bootstrap.Modal(modalElement);
   const modal_body = document.getElementById('modal_element_text');
