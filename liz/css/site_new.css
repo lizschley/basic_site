@@ -52,6 +52,20 @@ a.dropdown-item {
   --bs-dropdown-link-active-color: hsl(120, 100%, 40%);
 }
 
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+  display: block;
+}
+
 a.btn {
   --bs-btn-color: #FEF9E7;
   --bs-btn-bg: #006600;
