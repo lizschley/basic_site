@@ -1,4 +1,4 @@
-const base_path = '/basic_website/'
+const base_path = '/basic_site/'
 
 window.onload = (event) => {
     this.set_base_path()
