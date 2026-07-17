@@ -9,3 +9,6 @@ This site is hosted on HostGator and uses the following technologies: bootstrap 
 This has been reorganized now that I am retired and no longer need an online resume. It will be a personal inventory of the plants in my front and back yards (no longer true).
 
 I am leaving the purpose up in the air. I have all sorts of plans or fantasies that may or may not be implemented.
+
+➜  python -m http.server
+[localhost](http://localhost:8000/)
