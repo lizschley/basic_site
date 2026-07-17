@@ -12,10 +12,14 @@ document.querySelectorAll('.no_404').forEach(function (el) {
 });
 
 function set_base_path() {
-    if (window.location.hostpath == 'localhost') {
-        let tag = document.getElementsByTagName('base')
+    let tag = document.getElementsByTagName('base')
+    console.log('host==' + window.location.hostname)
+    console.log('path==' + window.location.pathname)
+    if (window.location.hostname == 'localhost') {
+        console.log('wrong if github, right if local')
         tag.setAttribute('href', '/')
     }
+    console.log('tag href == ' + tag.getAttribute("href"))
 }
 
 
