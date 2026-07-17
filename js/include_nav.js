@@ -1,4 +1,4 @@
-const base_path = '/basic_website/'
+const base_path = 'https://lizschley.github.io/basic_website/'
 
 window.onload = (event) => {
     this.set_base_path()
@@ -15,7 +15,7 @@ function set_base_path() {
     if (window.location.hostpath == 'localhost') {
         let tag = document.getElementsByTagName('base')
         tag.setAttribute('href', '/')
-    }
+    } else tag.setAttribute('href', base_path)
 }
 
 
