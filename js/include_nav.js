@@ -1,10 +1,6 @@
-// prod
-const base = '/basic_site/'
-// dev
-const base = '/'
 
 window.onload = (event) => {
-    this.set_base_path()
+    this.print_stuff()
     document.getElementById('include_nav_id').innerHTML = navbar_html();
 };
 
@@ -14,20 +10,14 @@ document.querySelectorAll('.no_404').forEach(function (el) {
   });
 });
 
-function set_base_path() {
-    let el = document.getElementsByTagName('base')
+function print_stuff() {
+    let el = document.querySelector('base')
     console.log('text: ' + el.textContent +
                 'innerHtml: ' + el.innerHTML +
                 'href: ' + el.getAttribute('href'))
     console.log('host==' + window.location.hostname)
     console.log('path==' + window.location.pathname)
-    if (window.location.hostname == 'localhost') {
-        console.log('wrong if github, right if local')
-        el.setAttribute('href', '/')
-    }
-    console.log('base tag href == ' + el.getAttribute("href"))
 }
-
 
 function navbar_html() {
     var nav_code = `<div class='container-fluid '>
