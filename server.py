@@ -1,5 +1,6 @@
 '''
- to run server --> python server.py
+Run following for local host, no caching issues:
+--> python server.py
 '''
 
 
