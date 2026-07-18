@@ -4,12 +4,6 @@ window.onload = (event) => {
     document.getElementById('include_nav_id').innerHTML = navbar_html();
 };
 
-document.querySelectorAll('.no_404').forEach(function (el) {
-  el.addEventListener('click', function (e) {
-    e.preventDefault();
-  });
-});
-
 function print_stuff() {
     let el = document.querySelector('base')
     console.log('text: ' + el.textContent +

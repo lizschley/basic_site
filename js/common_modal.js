@@ -3,6 +3,12 @@ window.addEventListener('load', (event) => {
   document.getElementById('modal_anchor_id').innerHTML = modal_html();
  }, false);
 
+document.querySelectorAll('.no_404').forEach(function (el) {
+  el.addEventListener('click', function (e) {
+    e.preventDefault();
+  });
+});
+
 const answers = document.querySelectorAll(".modal_link_class");
 const close_buttons = document.querySelectorAll(".close_modal");
 const loc_key = location_key();
@@ -10,7 +16,7 @@ const loc_key = location_key();
 answers.forEach(function(element) {
     //console.log('adding listener for id=' + element.getAttribute('id'));
     element.addEventListener('click', find_id_for_modal);
-  });
+});
 
 function find_id_for_modal() {
   const link_id = this.getAttribute("id");
@@ -37,7 +43,7 @@ function page_specific_data(link_id) {
     case "hawaii":
         return hawaii_modal(link_id)
     default:
-      console.log('We are not getting text and title for this location key: ' + location_key + ' or it could be the link_id: ' + link_id);
+      console.log('We are not getting text and title for this location key: ' + loc_key + ' or it could be the link_id: ' + link_id);
   }
 }
 
