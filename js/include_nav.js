@@ -27,7 +27,7 @@ function navbar_html() {
     <div class='collapse navbar-collapse' id='navbar-collapse'>
        <ul class='navbar-liz list-unstyled me-auto mb-2 mb-sm-0'>
           <li class='nav-item'>
-             <a class='nav-link active navlink-liz' aria-current='page' href='../index.html'>Home</a>
+             <a class='nav-link active navlink-liz' aria-current='page' href='index.html'>Home</a>
           </li>
           <li class='nav-item dropdown'>
              <a id='nav_dropdown' class='dropdown-toggle liz-colors' href='#' data-bs-toggle='dropdown' aria-expanded='false'>Insect Habitat</a>
