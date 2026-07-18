@@ -1,4 +1,7 @@
-const base_path = '/basic_site/'
+// prod
+const base = '/basic_site/'
+// dev
+const base = '/'
 
 window.onload = (event) => {
     this.set_base_path()
@@ -12,14 +15,17 @@ document.querySelectorAll('.no_404').forEach(function (el) {
 });
 
 function set_base_path() {
-    let tag = document.getElementsByTagName('base')
+    let el = document.getElementsByTagName('base')
+    console.log('text: ' + el.textContent +
+                'innerHtml: ' + el.innerHTML +
+                'href: ' + el.getAttribute('href'))
     console.log('host==' + window.location.hostname)
     console.log('path==' + window.location.pathname)
     if (window.location.hostname == 'localhost') {
         console.log('wrong if github, right if local')
-        tag.setAttribute('href', '/')
+        el.setAttribute('href', '/')
     }
-    console.log('tag href == ' + tag.getAttribute("href"))
+    console.log('base tag href == ' + el.getAttribute("href"))
 }
 
 
