@@ -42,7 +42,7 @@ function navbar_html() {
                     <a class="dropdown-item dropdown-toggle" href="#">Random</a>
                     <ul class="dropdown-menu">
                       <li class='list-item'><a class='dropdown-item' href='html/blog/random/2026_short.html'>Initial</a></li>
-                      <li class='list-item'><a class='dropdown-item' href='html/blog/random/hawaii_late_sept_2025.html'>O'ahu, Hawai\'i</a></li>
+                      <li class='list-item'><a class='dropdown-item' href='html/blog/random/hawaii.html'>O'ahu, Hawai\'i</a></li>
                     </ul>
                 </li>
                 <li class="dropdown-submenu">
