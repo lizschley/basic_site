@@ -26,10 +26,7 @@ answers.forEach(function(element) {
 
 function find_id_for_modal() {
   const loc_key = location_key();
-  console.log('in find_id_for_modal')
   const link_id = this.getAttribute("id");
-  console.log('link_id == ' + link_id)
-  console.log(modal_group)
   const modalElement = document.getElementById('generic_modal_element');
   const modal = new bootstrap.Modal(modalElement);
   const modal_body = document.getElementById('modal_element_text');
@@ -54,7 +51,7 @@ function allow_close_modal(modal) {
 
 function location_key() {
   var pathname = window.location.pathname;
-  if (pathname == '/base_site/' || pathname == '/') {
+  if (pathname == '/basic_site/' || pathname == '/') {
     return 'index'
   }
   var path_array = pathname.split('/');
