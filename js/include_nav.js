@@ -50,7 +50,6 @@ function navbar_html() {
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="html/blog/philosophy/intro_logic_philosophy.html">Intro to Logic and Philosophy</a></li>
                         <li><a class="dropdown-item" href="html/blog/philosophy/timeline_logic_philosophy.html">Timeline for Logic and Philosophy</a></li>
-                        <li><a class="dropdown-item" href="html/misc/philosophical_gleanings.html">Philosophical Gleanings</a></li>
                     </ul>
                 </li>
             </ul>
