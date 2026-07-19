@@ -2,7 +2,7 @@ function misc_modal() {
   return {
     google_sheet_image: {
       title: "Filtering Google Sheets with Many to Many Relationships",
-      text: `<figure class="text-center"><img src="../../images/filters_in_google_sheets.png" class="img-fluid rounded imgshadow" alt="Snapshot of Working Spreadsheet used to Develop the Formulas"><figcaption class="figure-caption text-center">Resulting spreadsheet Allows me to easily access desired data</figcaption></figure>`,
+      text: `<figure class="text-center"><img src="images/filters_in_google_sheets.png" class="img-fluid rounded imgshadow" alt="Snapshot of Working Spreadsheet used to Develop the Formulas"><figcaption class="figure-caption text-center">Resulting spreadsheet Allows me to easily access desired data</figcaption></figure>`,
       modal_size: "modal-fullscreen"
     },
     sheets_skip_story: {
