@@ -11,8 +11,6 @@ document.querySelectorAll('.no_404').forEach(function (el) {
 
 const answers = document.querySelectorAll(".modal_link_class");
 const close_buttons = document.querySelectorAll(".close_modal");
-const loc_key = location_key();
-console.log('location key: ' + loc_key)
 
 const modal_group = {
   'index': () => typeof riddle_answer_modal === "function" ? riddle_answer_modal() : {},
@@ -27,6 +25,7 @@ answers.forEach(function(element) {
 });
 
 function find_id_for_modal() {
+  const loc_key = location_key();
   console.log('in find_id_for_modal')
   const link_id = this.getAttribute("id");
   console.log('link_id == ' + link_id)
@@ -55,7 +54,7 @@ function allow_close_modal(modal) {
 
 function location_key() {
   var pathname = window.location.pathname;
-  if (pathname == '/') {
+  if (pathname == '/base_site/' || pathname == '/') {
     return 'index'
   }
   var path_array = pathname.split('/');
