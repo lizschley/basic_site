@@ -12,6 +12,14 @@ document.querySelectorAll('.no_404').forEach(function (el) {
 const answers = document.querySelectorAll(".modal_link_class");
 const close_buttons = document.querySelectorAll(".close_modal");
 const loc_key = location_key();
+console.log('location key: ' + loc_key)
+
+const modal_group = {
+  'index': () => typeof riddle_answer_modal === "function" ? riddle_answer_modal() : {},
+  'google_sheets_filtering': () => typeof misc_modal === "function" ? misc_modal() : {},
+  'community': () => typeof community_modal === "function" ? community_modal() : {},
+  'hawaii': () => typeof hawaii_modal === "function" ? hawaii_modal() : {}
+};
 
 answers.forEach(function(element) {
     //console.log('adding listener for id=' + element.getAttribute('id'));
@@ -19,32 +27,20 @@ answers.forEach(function(element) {
 });
 
 function find_id_for_modal() {
+  console.log('in find_id_for_modal')
   const link_id = this.getAttribute("id");
   console.log('link_id == ' + link_id)
+  console.log(modal_group)
   const modalElement = document.getElementById('generic_modal_element');
   const modal = new bootstrap.Modal(modalElement);
   const modal_body = document.getElementById('modal_element_text');
   const modal_title = document.getElementById('modal_element_title');
-  const modal_data = page_specific_data(link_id);
-  modal_body.innerHTML = modal_data.text;
-  modal_title.innerHTML = modal_data.title;
+  const modal_data = modal_group[loc_key]();
+  console.log(modal_data[link_id])
+  modal_body.innerHTML = modal_data[link_id].text;
+  modal_title.innerHTML = modal_data[link_id].title;
   modal.show();
   allow_close_modal(modal);
-}
-
-function page_specific_data(link_id) {
-  switch(loc_key) {
-    case "index":
-      return riddle_modal(link_id);
-    case "google_sheets_filtering":
-      return misc_modal(link_id);
-    case "community":
-        return community_modal(link_id);
-    case "hawaii":
-        return hawaii_modal(link_id)
-    default:
-      console.log('We are not getting text and title for this location key: ' + loc_key + ' or it could be the link_id: ' + link_id);
-  }
 }
 
 function allow_close_modal(modal) {
