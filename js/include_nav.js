@@ -1,8 +1,22 @@
-
 window.onload = (event) => {
     this.print_stuff()
     document.getElementById('include_nav_id').innerHTML = navbar_html();
 };
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.same-page-link').forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      const id = this.getAttribute('href').substring(1);
+      const target = document.getElementById(id);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+        history.replaceState(null, null, '#' + id);
+      }
+    });
+  });
+});
+
 
 function print_stuff() {
     let el = document.querySelector('base')
@@ -22,16 +36,6 @@ function navbar_html() {
        <ul class='navbar-liz list-unstyled me-auto mb-2 mb-sm-0'>
           <li class='nav-item'>
              <a class='nav-link active navlink-liz' aria-current='page' href='index.html'>Home</a>
-          </li>
-          <li class='nav-item dropdown'>
-             <a id='nav_dropdown' class='dropdown-toggle liz-colors' href='#' data-bs-toggle='dropdown' aria-expanded='false'>Insect Habitat</a>
-             <ul class='dropdown-menu'>
-                <li class='list-item'><a class='dropdown-item' href='html/insect_habitat/plant_overview.html'>Overview of Plant Project</a></li>
-                <li class='list-item'><a class='dropdown-item ' href='html/insect_habitat/community.html'>Home Plant Communities</a></li>
-                <li class='list-item'><a class='dropdown-item' href='html/insect_habitat/va_native.html'>Virginia Natives</a></li>
-                <li class='list-item'><a class='dropdown-item ' href='html/insect_habitat/native_east_us.html'>East US Natives</a></li>
-                <li class='list-item'><a class='dropdown-item' href='html/insect_habitat/non_native.html'>Non Natives</a></li>
-             </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,6 +57,16 @@ function navbar_html() {
                     </ul>
                 </li>
             </ul>
+          </li>
+          <li class='nav-item dropdown'>
+             <a id='nav_dropdown' class='dropdown-toggle liz-colors' href='#' data-bs-toggle='dropdown' aria-expanded='false'>Insect Habitat</a>
+             <ul class='dropdown-menu'>
+                <li class='list-item'><a class='dropdown-item' href='html/insect_habitat/plant_overview.html'>Overview of Plant Project</a></li>
+                <li class='list-item'><a class='dropdown-item ' href='html/insect_habitat/community.html'>Home Plant Communities</a></li>
+                <li class='list-item'><a class='dropdown-item' href='html/insect_habitat/va_native.html'>Virginia Natives</a></li>
+                <li class='list-item'><a class='dropdown-item ' href='html/insect_habitat/native_east_us.html'>East US Natives</a></li>
+                <li class='list-item'><a class='dropdown-item' href='html/insect_habitat/non_native.html'>Non Natives</a></li>
+             </ul>
           </li>
           <li class='nav-item dropdown'>
              <a id='nav_dropdown' class='dropdown-toggle liz-colors' href='#' data-bs-toggle='dropdown' aria-expanded='false'>Misc Info</a>

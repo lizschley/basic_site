@@ -11,14 +11,14 @@ function misc_modal() {
       modal_size: "modal-lg"
     },
     philosophy_intro: {
-      title: "Confusion and my Resolution",
+      title: "Resolution after Being Confused",
       text: `<pre><code>
             No physical 'causes' are reasons and
             All moral ideals are reasons
             No moral ideals are are physical causes
         </code></pre>
-        <p>No problem understanding the validity of the above argument. However, to me, it feels unsound, although in terms of Aristotle's reasoning and the context of the times, it probably was perfectly sound.</p>
-        <p>My problem is that in my world view physical causes can be reasons. But maybe I am using the words <i>physical</i> or <i>reason</i> differently. For me, morality is an outcome of empathy, which I feel through my physical body. For example, not being able to digest or sleep properly after reading about the conditions in ICE concentration camps.</p>`,
+        <p>No problem understanding the validity of the above argument. I had some confusion about the premises being sound. However, from the perspective of Aristotle's reasoning and the context of the times, the premises most likely were perfectly sound.</p>
+        <p>That being said, in my world-view physical causes can be reasons. But maybe I am using the words <i>physical</i> or <i>reason</i> differently. For me, morality is an outcome of empathy, which I feel through my physical body. For example, not being able to digest or sleep properly after reading about the conditions in ICE concentration camps.</p>`,
       modal_size: "modal-lg"
     },
     default: {

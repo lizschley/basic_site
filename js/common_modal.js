@@ -15,11 +15,6 @@ const modal_group = {
   'intro_philosophy': () => typeof misc_modal === "function" ? misc_modal() : {},
 };
 
-answers.forEach(function(element) {
-    //console.log('adding listener for id=' + element.getAttribute('id'));
-    element.addEventListener('click', find_id_for_modal);
-});
-
 function find_id_for_modal(e) {
   e.preventDefault();
   const loc_key = location_key();
