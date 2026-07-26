@@ -1,0 +1,31 @@
+.modal-content {
+    --bs-modal-color: #006600;
+    --bs-modal-bg: #f7f3db;
+    --bs-modal-border-color: #006600;;
+}
+
+body a.modal_popup_link {
+    color: #800020;
+}
+
+body #generic_modal_element {
+    background-color: #FEF9E7;
+    color: #006600;
+}
+
+.btn-liz {
+  background-color: #FEF9E7;
+  border-color: #006600;
+  color: #006600;
+}
+
+.btn-liz:hover {
+  background-color:  #FEF9E7;
+  border-color:  hsl(120, 100%, 40%);
+  color: hsl(120, 100%, 40%);;
+}
+
+.btn-liz:focus,
+.btn-liz:focus-visible {
+  box-shadow: 0 4px 12px hsla(120, 52%, 40%, 0.25);
+}
